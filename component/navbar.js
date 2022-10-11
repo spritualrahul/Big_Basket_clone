@@ -36,3 +36,11 @@ function navbar(){
 }
 
 export default navbar;
+
+
+//   <script src="https://kit.fontawesome.com/683b4b40e3.js" crossorigin="anonymous"></script>
+// <link rel="icon" href="https://www.bbassets.com/static/v2514/images/favicon.ico?v=2514" type="image/x-icon">
+
+
+// ID of Div should be "navContainer";
+
