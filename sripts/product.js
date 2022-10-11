@@ -1,3 +1,7 @@
+import navbar from "../component/navbar.js"
+let nav=navbar();
+document.getElementById("navContainer").innerHTML=nav;
+
 var Data;
 async function getdata(){
     try{
@@ -25,7 +29,7 @@ var image=document.createElement("img");
 image.src=elem.image_url
 image.setAttribute("id","imgid")
 var offdiv=document.createElement("div")
-offdiv.innerText=elem.off;
+offdiv.innerText=`Diwali Sale ${elem.off}`;
 offdiv.setAttribute("id","offdiv")
 var idiv=document.createElement("div")
 
@@ -59,7 +63,7 @@ divTwo.setAttribute("id","divTwo")
 
 var div3=document.createElement("div")
 div3.setAttribute("id","div3")
-div3.textContent="Standard Delivery: 20 oct, 7:00AM - 9:00AM"
+div3.textContent="Standard Delivery: 20 oct, 7:00AM - 9:00AM "
 divTwo.append(price2,price,div3);
 mdiv.append(divOne,divTwo)
 
@@ -106,53 +110,3 @@ prd.append(mainDiv);
 });
 }
 getdata();
-function addtocart(name,price){
-    // creating local storage
-let cartdata=JSON.parse(localStorage.getItem("bigbasket")) || [];
-// creating object to store cart data
-let obj={
-    name:name,
-    price:price,
-}
-cartdata.push(obj);
-// settig the total cart items
-document.getElementById("itemCountNav").textContent=`${cartdata.length} item`;
-// setting local storage
-localStorage.setItem("bigbasket",JSON.stringify(cartdata)); 
-
-}
-// getting the local storage of cart data
-let cartdata= JSON.parse(localStorage.getItem("bigbasket"))
-document.getElementById("itemCountNav").textContent=`${cartdata.length} item`;
-
-// adding sort functionality 
-
-var sort=document.getElementById("sortPrice");
-sort.addEventListener("change",function priceSort(){
-var sel=document.querySelector("#sortPrice").value;
-if(sel=="asc"){
-    Data.sort(function(a,b){
-        return a.mrp-b.mrp;
-    })
-}
-if(sel=="dsc"){
-    Data.sort(function(a,b){
-        return b.mrp-a.mrp;
-    })
-}
-if(sel=="nasc"){
-    Data.sort(function(a,b){
- if(b.name>a.name){
-     return -1;
- }
-})
-}
-if(sel=="ndsc"){
-    Data.sort(function(a,b){
- if(a.name>b.name){
-     return -1;
- }
-})
-}
-display(Data);
-});
