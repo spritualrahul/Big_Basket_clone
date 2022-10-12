@@ -1,4 +1,6 @@
 import navbar from "../component/navbar.js"
+import {caro} from "../component/carousel.js" ;
+document.getElementById("carousel").innerHTML = caro() ;
 let nav=navbar();
 
 import {footer} from "../component/footer.js" ;
