@@ -45,6 +45,7 @@ function footer(){
             Sunflower Oils, Wheat Atta, Ghee, Milk, Health Drinks, Flakes, Organic F&V, Namkeen, Eggs, Floor
             Cleaners, Other Juices, Leafy Vegetables, Frozen Veg Food, Diapers & Wipes, </span>
     </div>
+    
     <br>
     <div class="moveside">
         <span class="groupgreen ">POPULAR BRANDS:</span>
