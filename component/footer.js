@@ -25,9 +25,9 @@ function footer(){
     </div>
     <div class="move">
         <p class="headgreen">Download Our App</p>
-        <img src="./images_footer/Google-App-store-icon.png" alt="This is an Image">
+        <img src="../images_footer/Google-App-store-icon.png" alt="This is an Image">
         <br>
-        <img src="./images_footer/Apple-App-store-icon.png" alt="This is an Image">
+        <img src="../images_footer/Apple-App-store-icon.png" alt="This is an Image">
 
     </div>
     <div class="move">

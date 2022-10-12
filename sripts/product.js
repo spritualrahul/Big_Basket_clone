@@ -1,5 +1,10 @@
 import navbar from "../component/navbar.js"
 let nav=navbar();
+
+import {footer} from "../component/footer.js" ;
+console.log(footer) ;
+document.getElementById("footer").innerHTML = footer() ;
+
 document.getElementById("navContainer").innerHTML=nav;
 
 var Data;
