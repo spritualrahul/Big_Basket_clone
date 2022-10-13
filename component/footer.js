@@ -1,4 +1,4 @@
-function footer(){
+function footer() {
     return `<header class="headflex">
     <div>
         <p class="headgreen">bigbasket</p>
@@ -25,10 +25,14 @@ function footer(){
     </div>
     <div class="move">
         <p class="headgreen">Download Our App</p>
+        <a href="https://play.google.com/store/apps/details?id=com.bigbasket.mobileapp&hl=en_IN&gl=US" target="_blank">
         <img src="../images_footer/Google-App-store-icon.png" alt="This is an Image">
+    </a>
         <br>
+        <a href="https://apps.apple.com/in/app/bigbasket-grocery-delivery/id660683603" target="_blank">
         <img src="../images_footer/Apple-App-store-icon.png" alt="This is an Image">
-
+    </a>
+        
     </div>
     <div class="move">
         <p class="headgreen"> Social With Us </p>
@@ -78,10 +82,12 @@ function footer(){
         <span class="side40">CASH ON DELIVERY</span>
     </div>
 
-</div>` ;
+</div>`;
 }
 
-export {footer} ;
+export {
+    footer
+};
 
 
 // /* <link rel="stylesheet" href="./styles/style.css"></link> */
