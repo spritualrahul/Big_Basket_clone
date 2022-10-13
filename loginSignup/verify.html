@@ -23,19 +23,26 @@ body{
 .btn-verify,
 .btn-continue {
   width: 100%;
-  color: #000;
+  height: 3rem;
+  color: #fff;
   border-radius: 10px;
-  background-color: #ffdc3d;
+  background-color: dodgerblue;
   padding-left: 30px;
   padding-right: 30px;
   font-weight: 500;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
+  margin-top: 15px;
 }
 .container-content {
   position: relative;
   min-height: 580px;
   width: 300px;
-  margin: 0 auto; }
+  margin: 0 auto; 
+  color: yellowgreen;
+  text-align: center;
+ 
+  font-size: larger;
+}
 
 .mobile-verify,
 .otp-container,
@@ -49,12 +56,15 @@ body{
   flex-direction: column;
   border-radius: 30px;
   padding: 30px 35px;
-  background-color: #fff; }
+  background-color: #fff; 
+  text-decoration: underline;
+}
 
 .otp-container,
 .mobile-verify {
  
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+}
   .otp-container .nav,
   .mobile-verify .nav {
     position: relative; }
@@ -63,15 +73,17 @@ body{
       font-weight: 500; }
   .otp-container .text p,
   .mobile-verify .text p {
-    color: rgba(61, 61, 61, 0.8); }
+    color: rgba(61, 61, 61, 0.8);
+ }
   .otp-container .keyboard,
   .mobile-verify .keyboard {
-    margin: 0 -4px; }
+    margin: 0 -4px;
+ }
     .otp-container .keyboard .num,
     .otp-container .keyboard .remove,
     .mobile-verify .keyboard .num,
     .mobile-verify .keyboard .remove {
-      color: #000;
+      color: rgb(236, 27, 27);
       font-weight: 500;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       border-radius: 20px;
@@ -79,7 +91,7 @@ body{
       width: calc(33.3333% - 8px);
       margin: 0 4px 8px;
       text-align: center;
-      background-color: rgba(241, 241, 241, 0.8);
+      background-color: rgba(221, 36, 36, 0.8);
       cursor: pointer;
       transition: all 0.2s linear; }
       .otp-container .keyboard .num:hover, .otp-container .keyboard .num.active,
@@ -200,6 +212,12 @@ body{
   opacity: 1;
   visibility: visible;
   transform: scale(1); }
+  .phone-num-input{
+    width: 200%;
+  height: 5rem;
+  margin-top: 65px;
+  margin-left: 13px;
+  }
 
 /*# sourceMappingURL=style.css.map */
 
@@ -211,7 +229,7 @@ body{
                 <div
                     class="nav d-flex align-items-center justify-content-center"
                 >
-                    <p>LOGIN / SIGN UP</p>
+                    <p><b><b><b>LOGIN / SIGN UP</b></b></b></p>
                 </div>
                
                 <div class="phone-num-input">
@@ -232,17 +250,17 @@ body{
             <div class="otp-container go-right">
                 <div class="nav d-flex align-items-center">
                     <i class="btn-back fas fa-arrow-left"></i>
-                    <p>Verification Code</p>
-                </div>
+                    <p><b><b>Verify Mobile No</b></b></p>
+                </div><br><br><br>
                 <div class="text">
                     <p>
-                        Please type the verification <br />
-                        code sent to
+                        Please check the OTP  <br> sent to your mobile number
                         <span class="phone">+8412345***</span>
                     </p>
+                    <br><br>
                     <p>
-                        The OTP will expire in
-                        <span class="expire text-dark">30s</span>
+                        The OTP will expire in <br>
+                        <span class="expire text-dark">30s</span><br>
                     </p>
                 </div>
                 <div class="otp-input d-flex">
@@ -250,7 +268,7 @@ body{
                     <input type="text" maxlength="1" class="input" />
                     <input type="text" maxlength="1" class="input" />
                     <input type="text" maxlength="1" class="input" />
-                </div>
+                </div><br>
                 <span class="text-danger"></span>
                 <button
                     class="btn btn-verify d-flex align-items-center justify-content-between"
@@ -258,7 +276,7 @@ body{
                     Verify now <i class="fas fa-arrow-right"></i>
                 </button>
                 <div class="resend-code text-muted">
-                    Didn't receive code?
+                    Didn't receive code? <br>
                     <span class="btn-resend text-danger">Request again</span>
                 </div>
                 
