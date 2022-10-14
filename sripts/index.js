@@ -1,24 +1,8 @@
-import navbar from "../component/navbar.js"
-import {footer} from "../component/footer.js"
-let foot=footer();
-document.getElementById("footer").innerHTML=foot;
-let nav=navbar();
-document.getElementById("navContainer").innerHTML=nav;
+import {caro_1,caro_2} from "../component/carousel.js" ;
+document.getElementById("carousel-1").innerHTML = caro_1() ;
+document.getElementById("carousel-2").innerHTML = caro_2() ;
 
-var Data;
-async function getdata(){
-    try{
-        let req=await fetch("http://localhost:3000/data");
-        let data=await req.json();
-        console.log(data);
-        Data=data.products;
-    
-        display(data.products);
-    }
-    catch(err){
-        console.log(err);
-    }
-}
+
 
 function display(data){
     // getting the parent div to append the products
