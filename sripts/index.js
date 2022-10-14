@@ -1,8 +1,19 @@
 import {caro_1,caro_2} from "../component/carousel.js" ;
+import navbar from "../component/navbar.js"
+import {footer} from "../component/footer.js"
+let foot=footer();
+document.getElementById("footer").innerHTML=foot;
+let nav=navbar();
+document.getElementById("navContainer").innerHTML=nav;
 document.getElementById("carousel-1").innerHTML = caro_1() ;
 document.getElementById("carousel-2").innerHTML = caro_2() ;
 
-
+ async function getdata(url){
+    let res=await fetch(url);
+    let data=await res.json();
+    display(data.products)
+}
+let url="http://localhost:3000/data"
 
 function display(data){
     // getting the parent div to append the products
@@ -103,4 +114,4 @@ mainDiv.append(idiv,veg,fresh,name,coldiv);
 prd.append(mainDiv);
 });
 }
-getdata();
+getdata(url);
