@@ -7,15 +7,15 @@ function caro_1(){
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="../carousel_images/fresho-fnv-Bangalore-1600x460-11thOCT22.webp" class="d-block w-100" alt="...">
+        <img src="./carousel_images/fresho-fnv-Bangalore-1600x460-11thOCT22.webp" class="d-block w-100" alt="...">
 
       </div>
       <div class="carousel-item">
-        <img src="../carousel_images/hp_m_Dry_FishBanner_1600x460_070922.webp" class="d-block w-100" alt="...">
+        <img src="./carousel_images/hp_m_Dry_FishBanner_1600x460_070922.webp" class="d-block w-100" alt="...">
     
       </div>
       <div class="carousel-item">
-        <img src="../carousel_images/YXHP144_hp_fom_m_bbpl-staples_460_101022_Bangalore.webp" class="d-block w-100" alt="...">
+        <img src="./carousel_images/YXHP144_hp_fom_m_bbpl-staples_460_101022_Bangalore.webp" class="d-block w-100" alt="...">
         
       </div>
     </div>
@@ -34,22 +34,22 @@ function caro_2(){
   return `<div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
   <div class="carousel-inner">
       <div class="carousel-item active">
-          <img src="../carousel_images/big-diwali.webp" class="d-block w-100" alt="big-diwali">
+          <img src="./carousel_images/big-diwali.webp" class="d-block w-100" alt="big-diwali">
       </div>
       <div class="carousel-item">
-          <img src="../carousel_images/chocolate-gifting.webp" class="d-block w-100" alt="chocolate-gifting">
+          <img src="./carousel_images/chocolate-gifting.webp" class="d-block w-100" alt="chocolate-gifting">
       </div>
       <div class="carousel-item">
-          <img src="../carousel_images/festive-diwali.webp" class="d-block w-100" alt="festive-diwali">
+          <img src="./carousel_images/festive-diwali.webp" class="d-block w-100" alt="festive-diwali">
       </div>
       <div class="carousel-item active">
-          <img src="../carousel_images/pre-diwali.webp" class="d-block w-100" alt="pre-diwali">
+          <img src="./carousel_images/pre-diwali.webp" class="d-block w-100" alt="pre-diwali">
       </div>
       <div class="carousel-item">
-          <img src="../carousel_images/glassware.webp" class="d-block w-100" alt="glassware">
+          <img src="./carousel_images/glassware.webp" class="d-block w-100" alt="glassware">
       </div>
       <div class="carousel-item">
-          <img src="../carousel_images/sparkle-your-home.webp" class="d-block w-100" alt="sparkle-your-home">
+          <img src="./carousel_images/sparkle-your-home.webp" class="d-block w-100" alt="sparkle-your-home">
       </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"

@@ -1,0 +1,77 @@
+
+*{
+    color: grey;
+}
+.headgreen{
+    color:rgb(30, 205, 30);
+}
+
+.headflex{
+    display:flex ;
+    margin: 30px 60px;
+    
+
+}
+
+.move{
+    margin-left: 100px;
+}
+
+main{
+ display: flex;
+ /* text-align: center; */
+ 
+ flex-direction: column;
+}
+.groupgreen{
+    color:rgb(41, 184, 41);
+    white-space: nowrap;
+}
+
+.moveside{
+display: flex;
+/* margin-right: 30px; */
+margin-left: 30px;
+/* flex-direction: row; */
+/* font-size:smaller; */
+
+}
+
+.moveinside{
+    margin-left: 100px;
+}
+
+.side20{
+    margin-left: 89px;
+}
+
+.side40{
+    margin-left: 85px;
+}
+
+.side10{
+    margin-left: 55px;
+}
+
+#buttonImages {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+#bankOffers,#topOffers,#mostPopular,#snacksStore{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#bankOffers h4,#topOffers h4,#mostPopular h4,#snacksStore h4 {
+    margin-top: 50px;
+    font-size: 22px;
+    font-weight: 600;
+}
+#bankOffers img:hover,#topOffers img:hover,#mostPopular img:hover,#snacksStore img:hover{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
