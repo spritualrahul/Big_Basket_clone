@@ -1,3 +1,7 @@
+import navbar from "../component/navbar.js"
+import {footer} from "../component/footer.js"
+document.getElementById("footer").innerHTML = footer();
+document.getElementById("navContainer").innerHTML = navbar();
 let arr = [{name:"onion",
 original_price:36,
 price:30,
@@ -27,13 +31,16 @@ original_price:33,
 price:29,
 quantity:1,
 }]
+
 let total_sav = 0;
 let total_sub = 0;
 let delivery_ch = 0;
 window.addEventListener("load",display);
+
+
 function display(){
     document.querySelector("tbody").innerHTML = "";
-    arr.map(function(e){
+    arr.map(function(e,ind){
         let tr = document.createElement('tr');
         let name = document.createElement("td");
         name.innerText = e.name;
@@ -56,6 +63,7 @@ function display(){
             {
                 input.value = +input.value - 1;
                 e.quantity = +input.value;
+                arr[ind].quantity = +input.value;
             }else{
                 arr.splice(e,1);
             }
@@ -70,6 +78,7 @@ function display(){
         plus.addEventListener("click",function(){
          input.value = +input.value+1;
          e.quantity = +input.value;
+         arr[ind].quantity = +input.value;
          total_sub = 0;
          total_sav = 0;
          delivery_ch = 0;
@@ -79,7 +88,7 @@ function display(){
         div_qu.append(minus,input,plus);
         let subtotal = document.createElement('td');
         let total_price = document.createElement('p');
-        total_price.innerText = '₹'+input.value*e.price;
+        total_price.innerText = '₹'+e.quantity*e.price;
         let remove = document.createElement('span');
         remove.innerHTML = `<i class="fa-solid fa-trash"></i>`;
         remove.addEventListener("click",function(){
