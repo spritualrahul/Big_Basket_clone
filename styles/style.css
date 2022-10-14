@@ -52,3 +52,26 @@ margin-left: 30px;
 .side10{
     margin-left: 55px;
 }
+
+#buttonImages {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+#bankOffers,#topOffers,#mostPopular,#snacksStore{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#bankOffers h4,#topOffers h4,#mostPopular h4,#snacksStore h4 {
+    margin-top: 50px;
+    font-size: 22px;
+    font-weight: 600;
+}
+#bankOffers img:hover,#topOffers img:hover,#mostPopular img:hover,#snacksStore img:hover{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
