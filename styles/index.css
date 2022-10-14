@@ -1,14 +1,7 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
 }
-#sidepro{
-    display: flex;
-    gap: 20px;
-}
-#sidebar{
-    border: 5px solid black;
-    width: 300px;
-}
+
 #products{
     display: grid;
     grid-template-columns:repeat(5,1fr);
@@ -16,12 +9,10 @@
 }
 #mdiv{
     display: flex;
-    height: 300px;
-    width: 300px;
     /* border: 1px solid red; */
 }
 #mdiv > div> img{
-    height: 40px;
+    height: 15px;
    
     /* width: 50px; */
     padding-top: 30px;
@@ -33,7 +24,7 @@
     /* border: 1px solid red; */
     height: 50px;
     /* width: 120px; */
-    font-size: 20px;
+    font-size: 12px;
     padding-left: 10px;
 }
 
@@ -47,12 +38,9 @@
 }
 #mainDiv{
     /* border: 1px solid red; */
-    display: flex;
-    gap: 20px;
-
     height: 350px;
-    width: 330px;
-    
+    width: 200px;
+    padding: 15px;
 
 }
 #mainDiv:hover{
@@ -61,13 +49,11 @@
 #imgid{
     margin-left: 20px;
     margin-top: 5px;
-    height: 300PX;
-    width: 300px;
     
 }
 #fresh{
     color: gray;
-    font-size: 20px;
+    font-size: 13px;
 }
 #logo{
     width: 18px;
@@ -104,13 +90,8 @@
 
 }
 #coldiv{
-    height: 350px;
-    width: 330px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-   
-    
+    background-color: rgb(243, 240, 240);
+    padding-bottom: 20px;
 }
 #cat{
      border: 1px solid red; 
