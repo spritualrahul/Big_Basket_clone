@@ -1,0 +1,78 @@
+.or_price{
+    text-decoration: line-through;
+}
+.price_div{
+    display: grid;
+    gap: none;
+}
+.price_div>p{
+    margin-top: -10px;
+}
+#thead{
+    background-color: rgb(225, 225, 225);
+}
+.input{
+    width: 20px;
+}
+.subtotal{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.all{
+    text-align: center;
+}
+#basket{
+    display: flex;
+    gap: 10px;
+}
+#basket>div:first-child{
+    display: grid;
+    align-content: space-around;
+}
+#basket>div:last-child{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+#basket>div:last-child>div:first-child{
+    height: 60%;
+    padding: 5px;
+    display: flex;
+}
+#basket>div:last-child>div:first-child>div:first-child{
+    width: 80%;
+}
+#basket>div:last-child>div:first-child>div:first-child>div:first-child{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+#basket>div:last-child>div:first-child>div:first-child>div:last-child>div:first-child{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#basket>div:last-child>div:last-child{
+    display: grid;
+    align-content: flex-end;
+}
+#basket>div:last-child>div:last-child>div:first-child{
+    display: grid;
+    justify-content: end;
+}
+#basket>div:last-child>div:last-child{
+    height: 40%;
+
+}
+#all_cart{
+    display: grid;
+    justify-content: center;
+    background-color: rgb(205, 205, 205);
+}
+#cart{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: white;
+    width: 100%;
+}
+
