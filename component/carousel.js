@@ -64,5 +64,12 @@ function caro_2(){
   </button>
 </div>` ;
 }
+function mcaro(page){
+  
+ return fetch(`http://localhost:3000/products?_page=${page}&_limit=5`).then((res)=>res.json())
+    
 
-export {caro_1,caro_2} ;
+ 
+}
+
+export {caro_1,caro_2,mcaro} ;

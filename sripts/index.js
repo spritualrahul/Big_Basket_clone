@@ -1,6 +1,7 @@
-import {caro_1,caro_2} from "../component/carousel.js" ;
+import {caro_1,caro_2,mcaro} from "../component/carousel.js" ;
 import navbar from "../component/navbar.js"
 import {footer} from "../component/footer.js"
+
 let foot=footer();
 document.getElementById("footer").innerHTML=foot;
 let nav=navbar();
@@ -8,10 +9,17 @@ document.getElementById("navContainer").innerHTML=nav;
 document.getElementById("carousel-1").innerHTML = caro_1() ;
 document.getElementById("carousel-2").innerHTML = caro_2() ;
 
- async function getdata(url){
+ async function getdata(page=1){
+    if(page<1){
+        page=4
+    }
+    if(page>4){
+        page=1
+    }
+    let url=`http://localhost:3000/products?_page=${page}&_limit=5`
     let res=await fetch(url);
     let data=await res.json();
-    display(data.products)
+    display(data)
 }
 let url="http://localhost:3000/data"
 
@@ -114,4 +122,40 @@ mainDiv.append(idiv,veg,fresh,name,coldiv);
 prd.append(mainDiv);
 });
 }
-getdata(url);
+getdata(3);
+//  document.getElementById("mcorosel").innerHTML=getdata(`http://localhost:3000/products?_page=${1}&_limit=5`)
+
+
+//  function Titu(page){
+//     let div=document.createElement("div")
+//     let btn=document.createElement("button")
+//     btn.innerText="<"
+//     btn.addEventListener("click",()=>{
+//         Titu(pre=>pre+1)
+//     })
+//     let data=getdata(`http://localhost:3000/products?_page=${page}&_limit=5`)
+//     let btn2=document.createElement("button")
+//     btn.innerText=">"
+//     div.append(btn,data.btn2)
+//     document.getElementById("mcorosel").append(div)
+
+
+//  }
+//  Titu(1)
+let page=1
+document.getElementById("addone").addEventListener("click",prev)
+function prev(){
+    page--;
+    if(page<1){
+        page=4
+    }
+    getdata(page)
+}
+document.getElementById("addtwo").addEventListener("click",next)
+function next(){
+    page++;
+    if(page>4){
+        page=1
+    }
+    getdata(page)
+}
