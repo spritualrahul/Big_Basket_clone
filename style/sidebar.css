@@ -1,0 +1,63 @@
+
+
+
+/* Sidebar */
+
+
+#fresh{
+    color: gray;
+    font-size: 13px;
+}
+#price2{
+    text-decoration: line-through;
+    margin-right: 5px;
+    color: grey;
+}
+
+#inp{
+    height: 20px;
+    width: 220px;
+}
+
+#types{
+    font-size: 16px;
+    line-height: 5px;
+    padding-left: 10px;    
+}
+#types>p:hover{
+    color: rgb(129,227,143);
+    cursor: pointer;
+}
+#hov:hover{
+    color: rgb(129,227,143);
+    cursor: pointer;
+}
+#color{
+    text-decoration: underline 3px rgb(132,194,37);
+}
+#brand>input>input:hover{
+    color: rgb(129,227,143);
+    cursor: pointer;
+}
+#slide{
+    margin-left: 150px;
+    margin-bottom: 20px;
+}
+#fruits{
+margin-left: 420px;
+font-size: 25px;
+color: gray;
+}
+#sortPrice{
+    margin-left: 66%;
+    height: 30px;
+    width: 230px;
+    border: 1px solid rgb(132,194,37);
+    margin-bottom: 20px;
+}
+#price,#origin,#seasonal,#pack,#brand{
+    font-size: 18px;
+    line-height: 22px;
+}
+
+/* end sidebar */
