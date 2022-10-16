@@ -2,7 +2,7 @@ import navbar from "../component/navbar.js"
 import {footer} from "../component/footer.js"
 document.getElementById("footer").innerHTML = footer();
 document.getElementById("navContainer").innerHTML = navbar();
-let arr = [{name:"onion",
+let arr2 = [{name:"onion",
 original_price:36,
 price:30,
 quantity:1,
@@ -31,7 +31,8 @@ original_price:33,
 price:29,
 quantity:1,
 }]
-
+localStorage.setItem("cart",JSON.stringify(arr2));
+let arr = JSON.parse(localStorage.getItem("cart"));
 let total_sav = 0;
 let total_sub = 0;
 let delivery_ch = 0;
@@ -121,3 +122,6 @@ function display(){
     let total_amount1 = document.getElementById("total_amount1");
     total_amount1.innerText = total_sub+delivery_ch;
 }
+document.getElementById("checkout").addEventListener("click",function(){
+    window.location.href = "../checkout/checkoutpage.html";
+})
