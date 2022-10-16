@@ -1,68 +1,41 @@
-import {caro_1,caro_2,mcaro} from "../component/carousel.js" ;
 import navbar from "../component/navbar.js"
 import {footer} from "../component/footer.js"
-
 let foot=footer();
 document.getElementById("footer").innerHTML=foot;
 let nav=navbar();
 document.getElementById("navContainer").innerHTML=nav;
-document.getElementById("carousel-1").innerHTML = caro_1() ;
-document.getElementById("carousel-2").innerHTML = caro_2() ;
-
- async function getdata(page=1){
-    if(page<1){
-        page=4
-    }
-    if(page>4){
-        page=1
-    }
-    let url=`http://localhost:3000/products?_page=${page}&_limit=5`
-    let res=await fetch(url);
-    let data=await res.json();
-    display(data)
-}
-let url="http://localhost:3000/data"
-
-function display(data){
-    // getting the parent div to append the products
-let prd=document.getElementById("products")
-prd.innerHTML="";
-// mapping the created products data
-data.forEach(function(elem,index){
+let product=JSON.parse(localStorage.getItem("productId"))||[]
 var mainDiv=document.createElement("div");
 mainDiv.setAttribute("id","mainDiv")
 
-
+let imagediv=document.createElement("div")
 var image=document.createElement("img");
-image.src=elem.image_url
+image.src=product.image_url
 image.setAttribute("id","imgid")
-image.addEventListener("click",()=>{
 
-    localStorage.setItem("productId",JSON.stringify(elem))
-    window.location.href="./product.html"
-})
 var offdiv=document.createElement("div")
-offdiv.innerText=`Diwali Sale ${elem.off}*`;
+offdiv.innerText=`Diwali Sale ${product.off}*`;
 offdiv.setAttribute("id","offdiv")
 var idiv=document.createElement("div")
 
 var name=document.createElement("h7");
-name.style.fontSize="20px"
+name.style.fontSize="30px"
 var fresh=document.createElement("div")
 fresh.setAttribute("id","fresh")
 fresh.textContent="Fresho"
-name.textContent=elem.name;
+name.textContent=product.name;
 name.style.backgroundColor="white";
 var veg=document.createElement("img")
 veg.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh71sfIQVPk_TuhnuWB0Q1E6FlciHqRH-wRA&usqp=CAU"
 veg.setAttribute("id","logo")
 
+imagediv.append(offdiv,image,veg)
 
 var price=document.createElement("h7");
 var price2=document.createElement("h7");
-price2.textContent=elem.mrp2;
+price2.textContent=product.mrp2;
 price2.setAttribute("id","price2")
-price.textContent=`₹ ${elem.mrp}`;
+price.textContent=`₹ ${product.mrp}`;
 price.style.fontSize="18px"
 
 var truck=document.createElement("img")
@@ -82,8 +55,6 @@ mdiv.append(divOne,divTwo)
 
 var coldiv=document.createElement("div")
 coldiv.setAttribute("id","coldiv")
-
-//button 
 var qtybox=document.createElement("div")
 qtybox.setAttribute("id","qtybox")
 qtybox.innerText="1"
@@ -95,7 +66,7 @@ var count=2;
 // adding click event to add items in the cart
 btn.addEventListener("click",function(){
     qtybox.textContent=count++;
-    addtocart(elem.name,elem.mrp);
+    addtocart(product.name,product.mrp);
      alert(`${elem.name} is added successfully`)
 
   })
@@ -111,51 +82,12 @@ qty.textContent="Qty"
 
 var cartbtn=document.createElement("div")
 cartbtn.append(btn)
-
+idiv.append(fresh,name)
 qtydiv.append(qty,qtybox)
 btndiv.append(qtydiv,cartbtn)
-coldiv.append(mdiv,btndiv)
+coldiv.append(idiv,mdiv,btndiv)
 
 
-idiv.append(offdiv,image)
-mainDiv.append(idiv,veg,fresh,name,coldiv);
-prd.append(mainDiv);
-});
-}
-getdata(3);
-//  document.getElementById("mcorosel").innerHTML=getdata(`http://localhost:3000/products?_page=${1}&_limit=5`)
 
-
-//  function Titu(page){
-//     let div=document.createElement("div")
-//     let btn=document.createElement("button")
-//     btn.innerText="<"
-//     btn.addEventListener("click",()=>{
-//         Titu(pre=>pre+1)
-//     })
-//     let data=getdata(`http://localhost:3000/products?_page=${page}&_limit=5`)
-//     let btn2=document.createElement("button")
-//     btn.innerText=">"
-//     div.append(btn,data.btn2)
-//     document.getElementById("mcorosel").append(div)
-
-
-//  }
-//  Titu(1)
-let page=1
-document.getElementById("addone").addEventListener("click",prev)
-function prev(){
-    page--;
-    if(page<1){
-        page=4
-    }
-    getdata(page)
-}
-document.getElementById("addtwo").addEventListener("click",next)
-function next(){
-    page++;
-    if(page>4){
-        page=1
-    }
-    getdata(page)
-}
+mainDiv.append(imagediv,coldiv);
+document.getElementById("product").append(mainDiv)
