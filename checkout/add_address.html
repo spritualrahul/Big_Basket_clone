@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="add_address.css">
+    <script src="https://kit.fontawesome.com/c858a2ffdc.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/683b4b40e3.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="https://www.bbassets.com/static/v2514/images/favicon.ico?v=2514" type="image/x-icon">
+    <link rel="stylesheet" href="../style/navbar.css"></link>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <div id="navContainer"></div>
+    <div id="main_block">
+    <h2>Add Address</h2>
+    <div id="add_address">
+        <h3>PERSIONAL DETAILS</h3>
+        <div id="name_details">
+            <label for="f_name">First Name:</label>
+            <input type="text" id="f_name" placeholder="Enter first name">
+            <label for="l_name">Last Name:</label>
+            <input type="text" id="l_name" placeholder="Enter last name">
+            <label for="number">Phone number:</label>
+            <input type="number" id="number" placeholder="Enter Phone Number">
+        </div>
+        <h3>ADDRESS DETAILS</h3>
+        <div id="address_details">
+            <input id="house_number" type="text" placeholder="House number">
+            <input id="house_name" type="text" placeholder="House name">
+            <input id="street" type="text" placeholder="Street">
+            <input id="land_mark" type="text" placeholder="Land Mark">
+            <select name="" id="city">
+                <option value="banglore">banglore</option>
+                <option value="hyderabad">hyderabad</option>
+                <option value="mangalore">mangalore</option>
+                <option value="chennai">chennai</option>
+                <option value="koppal">koppal</option>
+                <option value="raichur">raichur</option>
+                <option value="davanagere">davanagere</option>
+            </select>
+            <select name="" id="state">
+                <option value="karnataka">karnataka</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Telangana">Telangana</option>
+            </select>
+            <input id="pincode" type="number" placeholder="Pincode">
+        </div>
+        <label for="">Choose a nick name</label>
+        <div>
+            <input type="radio" id="home" name="place">
+            <label for="home">home</label>
+            <input type="radio" id="office" name="place">
+            <label for="office">office</label>
+            <input type="radio" id="other" name="place">
+            <label for="other">other</label>
+        </div>
+        <div>
+            <input type="checkbox" id="default">
+            <label for="default">make this as my default address</label>
+        </div>
+        <div id="buttons">
+            <button id="cancel">Cancel</button>
+            <button id="add">Add address</button>
+        </div>
+    </div>
+</div>
+<div id="footer"></div>
+</body>
+</html>
+<script src="add.address.js" type="module"></script>
+<script src="https://kit.fontawesome.com/c858a2ffdc.js" crossorigin="anonymous"></script>

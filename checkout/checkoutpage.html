@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="checkoutpage.css">
+    <script src="https://kit.fontawesome.com/c858a2ffdc.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/683b4b40e3.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="https://www.bbassets.com/static/v2514/images/favicon.ico?v=2514" type="image/x-icon">
+    <link rel="stylesheet" href="../style/navbar.css"></link>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <div id="navContainer"></div>
+    <div id="outer_box">
+    <div id="main_box">
+        <div id="d_add"><p><i class="fa-solid fa-location-pin"></i> <span> </span> Delivery Address</p> <button id="add_address">add new address</button></div>
+        <div id="address"></div>
+    </div>
+    <div id="done">
+        <div id="ch_add"><p><i class="fa-solid fa-location-pin"></i> <span> </span> Delivery Address</p> <p id="short_cut"></p> <button id="change_address">Change address</button></div>
+    </div>
+    </div>
+    <div id="temp_shipment">
+        <p>Delivery options</p> <p id="info"></p><button id="sh_but"></button>
+    </div>
+    <div id="ship_outermost">
+    <div id="shipment_outer">
+        <div id="shipment_options">
+            <div id="4_days"><p>Delivery option : 1</p> <p>Delivery charges : free</p> <p>shipment : 1</p></div>
+            <div id="2_days"><p>Delivery option : 2</p> <p>Delivery charges : 40</p> <p>shipment : 2</p></div>
+            <div id="12_hours"><p>Delivery option : 3</p> <p>Delivery charges : 80</p> <p>shipment : 3</p></div>
+            <div id="instant"><p>Delivery option : 4</p> <p>Delivery charges : take me to date</p> <p>shipment : 4</p></div>
+        </div>
+        <div id="four_days">
+            <p>shipment | Standard delivery</p>
+            <p>Delivery charges : Rs 0</p>
+            <div id="list"></div>
+            <p>shipment will arrive in 4 days</p>
+        </div>
+        <div id="two_days">
+            <p>shipment | Standard delivery</p>
+            <p>Delivery charges : Rs 40</p>
+            <div id="list"></div>
+            <p>shipment will arrive in 2 days</p>
+        </div>
+        <div id="twelve_hours">
+            <p>shipment | Standard delivery</p>
+            <p>Delivery charges : Rs 80</p>
+            <div id="list"></div>
+            <p>shipment will arrive in 12 hours</p>
+        </div>
+        <div id="instant_maggy">
+            <p>shipment | Standard delivery</p>
+            <p>Delivery charges : Rs 0</p>
+            <div id="list"></div>
+            <p>just close your eyes and open , you will see it in your beautifull hands :)</p>
+        </div>
+        <div id="continue">
+            <button>Continue to payment</button>
+        </div>
+    </div>
+</div>
+<div id="pay1_outer">
+    <div>
+        <h2>PAYMENT OPTIONS</h2>
+    </div>
+    
+</div>
+<div id="pay_outer">
+<div id="payment">
+<h2>PAYMENT OPTIONS</h2>
+<div id="pay_inner">
+<div id="pay_meyhods">
+<button id="upi">Upi</button>
+<button id="Credit">Credit/Debit</button>
+<button id="Case_on"> cash on delivery</button>
+</div>
+
+<div id="pay_boxes">
+    <div id="Card">
+        <h3>Add Credit/Debit card</h3>
+        <div>
+            <label for="c_no">Card Number</label>
+            <input type="text" id="c_no" placeholder="Enter Card number">
+            <div>
+                <label for="expiry">Valid Expiry</label>
+                <input type="text" id="expiry" placeholder="MM/YY">
+                <label for="cvv">CVV</label>
+                <input type="number" id="cvv" placeholder="CVV">
+            </div>
+            <button>Place order and pay</button>
+        </div>
+    </div>
+    <div id="cash_on">
+        <h3>Cash on delivery</h3>
+        <div>
+            <input type="radio" id="select">
+            <label for="elect">Cash on delivery</label>
+            <p>Tip: to ensure contactless delivery we preffer you to choose online methods!</p>
+        </div>
+        <div>
+            <button>Place order</button>
+        </div>
+    </div>
+<div id="box_in_upi">
+    <h4>Pay using Upi</h4>
+    <div>
+        <h3>Add new UPI ID</h3>
+    </div>
+    <div>
+        <p>upi id</p>
+<input type="text" name="" id="" placeholder="user@bankname">
+<p>A payment request will be sent to this Upi ID</p>
+    </div>
+<div>
+    <button id="verify">
+        Verify
+    </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+    <div id="footer"></div>
+</body>
+</html>
+<script src="checkoutpage.js" type="module"></script>
+<script src="https://kit.fontawesome.com/c858a2ffdc.js" crossorigin="anonymous"></script>

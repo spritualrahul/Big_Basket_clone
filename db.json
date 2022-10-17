@@ -2,8 +2,10 @@
   "data": {
     "products": [
       {
-        "_id": "6215cd0e298e6b1779837b3b",
+        "_id": "1",
         "name": "Onion",
+        "category":"onion",
+        "category1":"veg",
         "off": "Get 30% off",
         "image_url": "https://www.bigbasket.com/media/uploads/p/s/40075537_5-fresho-onion.jpg",
         "mrp": 38.38,
@@ -12,8 +14,10 @@
         "updatedAt": "2022-02-23T05:58:38.639Z"
       },
       {
-        "_id": "6215cdfd298e6b1779837b3e",
-        "name": "Tomato - Local",
+        "_id": "2",
+        "name": "Tomato",
+        "category":"tomato",
+        "category1":"veg",
         "off": "Get 20% off",
         "image_url": "https://www.bigbasket.com/media/uploads/p/s/10000203_16-fresho-tomato-local.jpg",
         "mrp": 26.26,
@@ -22,8 +26,9 @@
         "updatedAt": "2022-02-23T06:02:37.899Z"
       },
       {
-        "_id": "6215ce2b298e6b1779837b40",
+        "_id": "3",
         "name": "Potato",
+        "category1":"veg",
         "off": "Get 29% off",
         "image_url": "https://www.bigbasket.com/media/uploads/p/s/10000159_25-fresho-potato.jpg",
         "mrp": 28.28,
@@ -32,8 +37,10 @@
         "updatedAt": "2022-02-23T06:03:23.683Z"
       },
       {
-        "_id": "6215ce6e298e6b1779837b42",
+        "_id": "4",
         "name": "Tomato - Hybrid",
+        "category":"tomato",
+        "category1":"veg",
         "off": "Get 25% off",
         "image_url": "https://www.bigbasket.com/media/uploads/p/s/10000201_15-fresho-tomato-hybrid.jpg",
         "mrp": 14.14,
@@ -42,8 +49,10 @@
         "updatedAt": "2022-02-23T06:04:30.760Z"
       },
       {
-        "_id": "6215ce8a298e6b1779837b44",
+        "_id": "5",
         "name": "Ladies Finger",
+        "category":"ladyfinger",
+        "category1":"veg",
         "off": "Get 41% off",
         "image_url": "https://www.bigbasket.com/media/uploads/p/s/10000144_13-fresho-ladies-finger.jpg",
         "mrp": 22.22,
@@ -52,8 +61,10 @@
         "updatedAt": "2022-02-23T06:04:58.702Z"
       },
       {
-        "_id": "621673ce605fb4ef79401221",
+        "_id": "6",
         "name": "Carrot - Orange",
+        "category":"carrot",
+        "category1":"veg",
         "off": "Get 27% off",
         "image_url": "https://www.bigbasket.com/media/uploads/p/s/10000072_16-fresho-carrot-orange.jpg",
         "mrp": 49.49,
@@ -62,8 +73,10 @@
         "updatedAt": "2022-02-23T17:50:06.297Z"
       },
       {
-        "_id": "6216745f1d69b17ebf85ca77",
+        "_id": "7",
         "name": "Cucumber",
+        "category":"cucumber",
+        "category1":"veg",
         "off": "Get 27% off",
         "image_url": "https://www.bigbasket.com/media/uploads/p/s/10000103_16-fresho-cucumber.jpg",
         "mrp": 10.1,
@@ -72,8 +85,10 @@
         "updatedAt": "2022-02-23T17:52:31.561Z"
       },
       {
-        "_id": "621674db1d69b17ebf85ca79",
+        "_id": "8",
         "name": "Banana - Yelakki",
+        "category":"banana",
+        "category1":"fruit",
         "off": "Get 32% off",
         "image_url": "https://www.bigbasket.com/media/uploads/p/s/10000031_21-fresho-banana-yelakki.jpg",
         "mrp": 55.27,
@@ -82,8 +97,10 @@
         "updatedAt": "2022-02-23T17:54:35.305Z"
       },
       {
-        "_id": "621674e21d69b17ebf85ca7b",
+        "_id": "9",
         "name": "Coriander Leaves",
+        "category":"corinder",
+        "category1":"veg",
         "off": "Get 46% off",
         "image_url": "https://www.bigbasket.com/media/uploads/p/s/10000098_9-fresho-coriander-leaves.jpg",
         "mrp": 10.1,
@@ -92,8 +109,10 @@
         "updatedAt": "2022-02-23T17:54:42.177Z"
       },
       {
-        "_id": "621675001d69b17ebf85ca7d",
+        "_id": "10",
         "name": "Mushrooms - Button",
+        "category":"mushroom",
+        "category1":"veg",
         "off": "Get 39% off",
         "image_url": "https://www.bigbasket.com/media/uploads/p/s/10000273_16-fresho-mushrooms-button.jpg",
         "mrp": 44.44,
@@ -102,8 +121,10 @@
         "updatedAt": "2022-02-23T17:55:12.481Z"
       },
       {
-        "_id": "6216752d1d69b17ebf85ca7f",
+        "_id": "11",
         "name": "Capsicum - Green",
+        "category":"capsicum",
+        "category1":"veg",
         "off": "Get 25% off",
         "image_url": "https://www.bigbasket.com/media/uploads/p/s/10000069_20-fresho-capsicum-green.jpg",
         "mrp": 37.37,
@@ -112,8 +133,10 @@
         "updatedAt": "2022-02-23T17:55:57.033Z"
       },
       {
-        "_id": "6216758b1d69b17ebf85ca81",
+        "_id": "12",
         "name": "Palak - Cleaned, without roots",
+        "category":"palak",
+        "category1":"veg",
         "off": "Get 20% off",
         "image_url": "https://www.bigbasket.com/media/uploads/p/s/10000188_12-fresho-palak-cleaned-without-roots.jpg",
         "mrp": 22.5,
@@ -122,8 +145,10 @@
         "updatedAt": "2022-02-23T17:57:31.916Z"
       },
       {
-        "_id": "621675a71d69b17ebf85ca83",
+        "_id": "13",
         "name": "Beans - Haricot",
+        "category":"bean",
+        "category1":"veg",
         "off": "Get 20% off",
         "image_url": "https://www.bigbasket.com/media/uploads/p/s/40089743_2-fresho-beans-haricot.jpg",
         "mrp": 16.5,
@@ -132,8 +157,10 @@
         "updatedAt": "2022-02-23T17:57:59.446Z"
       },
       {
-        "_id": "621675ca1d69b17ebf85ca85",
+        "_id": "14",
         "name": "Orange - Nagpur, Regular",
+        "category":"orange",
+        "category1":"fruit",
         "off": "Get 20% off",
         "image_url": "https://www.bigbasket.com/media/uploads/p/s/10000266_27-fresho-orange-nagpur-regular.jpg",
         "mrp": 89,
@@ -142,8 +169,10 @@
         "updatedAt": "2022-02-23T17:58:34.137Z"
       },
       {
-        "_id": "621675e41d69b17ebf85ca87",
+        "_id": "15",
         "name": "Tender Coconut - Medium",
+        "category":"coconut",
+        "category1":"fruit",
         "off": "Get 20% off",
         "image_url": "https://www.bigbasket.com/media/uploads/p/s/40057966_2-fresho-tender-coconut-medium.jpg",
         "mrp": 30,
@@ -152,8 +181,10 @@
         "updatedAt": "2022-02-23T17:59:00.117Z"
       },
       {
-        "_id": "621677137921aee3a2a5e236",
+        "_id": "16",
         "name": "Potato - New Crop",
+        "category":"potato",
+        "category1":"veg",
         "off": "Get 31% off",
         "image_url": "https://www.bigbasket.com/media/uploads/p/s/40048457_7-fresho-potato-new-crop.jpg",
         "mrp": 37,
@@ -162,8 +193,10 @@
         "updatedAt": "2022-02-23T18:04:03.290Z"
       },
       {
-        "_id": "6216773d7921aee3a2a5e238",
+        "_id": "17",
         "name": "Onion - Organically Grown",
+        "category":"onion",
+        "category1":"veg",
         "off": "Get 20% off",
         "image_url": "https://www.bigbasket.com/media/uploads/p/s/40023472_5-fresho-onion-organically-grown.jpg",
         "mrp": 45,
@@ -172,8 +205,10 @@
         "updatedAt": "2022-02-23T18:04:45.630Z"
       },
       {
-        "_id": "621677527921aee3a2a5e23a",
+        "_id": "18",
         "name": "Coconut - Medium",
+        "category":"coconut",
+        "category1":"fruit",
         "off": "Get 29% off",
         "image_url": "https://www.bigbasket.com/media/uploads/p/s/10000093_16-fresho-coconut-medium.jpg",
         "mrp": 23.23,
@@ -182,8 +217,10 @@
         "updatedAt": "2022-02-23T18:05:06.011Z"
       },
       {
-        "_id": "6216776c7921aee3a2a5e23c",
+        "_id": "19",
         "name": "Tomato - Local, Organically Grown",
+        "category":"tomato",
+        "category1":"veg",
         "off": "Get 20% off",
         "image_url": "https://www.bigbasket.com/media/uploads/p/s/40022638_4-fresho-tomato-local-organically-grown.jpg",
         "mrp": 19,
@@ -192,8 +229,10 @@
         "updatedAt": "2022-02-23T18:05:32.683Z"
       },
       {
-        "_id": "621678fe2279dbb5466b5ddd",
+        "_id": "20",
         "name": "Ridge Gourd",
+        "category":"ridge",
+        "category1":"veg",
         "off": "Get 25% off",
         "image_url": "https://www.bigbasket.com/media/uploads/p/s/10000175_15-fresho-ridge-gourd.jpg",
         "mrp": 24.24,
@@ -204,4 +243,300 @@
     ],
     "totalPages": 2
   }
+,
+"products": [
+  {
+    "_id": "1",
+    "name": "Onion",
+    "category":"onion",
+    "category1":"veg",
+    "off": "Get 30% off",
+    "image_url": "https://www.bigbasket.com/media/uploads/p/s/40075537_5-fresho-onion.jpg",
+    "mrp": 38.38,
+    "mrp2": 55,
+    "createdAt": "2022-02-23T05:58:38.639Z",
+    "updatedAt": "2022-02-23T05:58:38.639Z"
+  },
+  {
+    "_id": "2",
+    "name": "Tomato",
+    "category":"tomato",
+    "category1":"veg",
+    "off": "Get 20% off",
+    "image_url": "https://www.bigbasket.com/media/uploads/p/s/10000203_16-fresho-tomato-local.jpg",
+    "mrp": 26.26,
+    "mrp2": 32.83,
+    "createdAt": "2022-02-23T06:02:37.899Z",
+    "updatedAt": "2022-02-23T06:02:37.899Z"
+  },
+  {
+    "_id": "3",
+    "name": "Potato",
+    "category1":"veg",
+    "off": "Get 29% off",
+    "image_url": "https://www.bigbasket.com/media/uploads/p/s/10000159_25-fresho-potato.jpg",
+    "mrp": 28.28,
+    "mrp2": 40,
+    "createdAt": "2022-02-23T06:03:23.683Z",
+    "updatedAt": "2022-02-23T06:03:23.683Z"
+  },
+  {
+    "_id": "4",
+    "name": "Tomato - Hybrid",
+    "category":"tomato",
+    "category1":"veg",
+    "off": "Get 25% off",
+    "image_url": "https://www.bigbasket.com/media/uploads/p/s/10000201_15-fresho-tomato-hybrid.jpg",
+    "mrp": 14.14,
+    "mrp2": 18.75,
+    "createdAt": "2022-02-23T06:04:30.760Z",
+    "updatedAt": "2022-02-23T06:04:30.760Z"
+  },
+  {
+    "_id": "5",
+    "name": "Ladies Finger",
+    "category":"ladyfinger",
+    "category1":"veg",
+    "off": "Get 41% off",
+    "image_url": "https://www.bigbasket.com/media/uploads/p/s/10000144_13-fresho-ladies-finger.jpg",
+    "mrp": 22.22,
+    "mrp2": 37.5,
+    "createdAt": "2022-02-23T06:04:58.702Z",
+    "updatedAt": "2022-02-23T06:04:58.702Z"
+  },
+  {
+    "_id": "6",
+    "name": "Carrot - Orange",
+    "category":"carrot",
+    "category1":"veg",
+    "off": "Get 27% off",
+    "image_url": "https://www.bigbasket.com/media/uploads/p/s/10000072_16-fresho-carrot-orange.jpg",
+    "mrp": 49.49,
+    "mrp2": 68.63,
+    "createdAt": "2022-02-23T17:50:06.297Z",
+    "updatedAt": "2022-02-23T17:50:06.297Z"
+  },
+  {
+    "_id": "7",
+    "name": "Cucumber",
+    "category":"cucumber",
+    "category1":"veg",
+    "off": "Get 27% off",
+    "image_url": "https://www.bigbasket.com/media/uploads/p/s/10000103_16-fresho-cucumber.jpg",
+    "mrp": 10.1,
+    "mrp2": 13.9,
+    "createdAt": "2022-02-23T17:52:31.561Z",
+    "updatedAt": "2022-02-23T17:52:31.561Z"
+  },
+  {
+    "_id": "8",
+    "name": "Banana - Yelakki",
+    "category":"banana",
+    "category1":"fruit",
+    "off": "Get 32% off",
+    "image_url": "https://www.bigbasket.com/media/uploads/p/s/10000031_21-fresho-banana-yelakki.jpg",
+    "mrp": 55.27,
+    "mrp2": 81.85,
+    "createdAt": "2022-02-23T17:54:35.305Z",
+    "updatedAt": "2022-02-23T17:54:35.305Z"
+  },
+  {
+    "_id": "9",
+    "name": "Coriander Leaves",
+    "category":"corinder",
+    "category1":"veg",
+    "off": "Get 46% off",
+    "image_url": "https://www.bigbasket.com/media/uploads/p/s/10000098_9-fresho-coriander-leaves.jpg",
+    "mrp": 10.1,
+    "mrp2": 18.75,
+    "createdAt": "2022-02-23T17:54:42.177Z",
+    "updatedAt": "2022-02-23T17:54:42.177Z"
+  },
+  {
+    "_id": "10",
+    "name": "Mushrooms - Button",
+    "category":"mushroom",
+    "category1":"veg",
+    "off": "Get 39% off",
+    "image_url": "https://www.bigbasket.com/media/uploads/p/s/10000273_16-fresho-mushrooms-button.jpg",
+    "mrp": 44.44,
+    "mrp2": 72.5,
+    "createdAt": "2022-02-23T17:55:12.481Z",
+    "updatedAt": "2022-02-23T17:55:12.481Z"
+  },
+  {
+    "_id": "11",
+    "name": "Capsicum - Green",
+    "category":"capsicum",
+    "category1":"veg",
+    "off": "Get 25% off",
+    "image_url": "https://www.bigbasket.com/media/uploads/p/s/10000069_20-fresho-capsicum-green.jpg",
+    "mrp": 37.37,
+    "mrp2": 50,
+    "createdAt": "2022-02-23T17:55:57.033Z",
+    "updatedAt": "2022-02-23T17:55:57.033Z"
+  },
+  {
+    "_id": "12",
+    "name": "Palak - Cleaned, without roots",
+    "category":"palak",
+    "category1":"veg",
+    "off": "Get 20% off",
+    "image_url": "https://www.bigbasket.com/media/uploads/p/s/10000188_12-fresho-palak-cleaned-without-roots.jpg",
+    "mrp": 22.5,
+    "mrp2": 28.13,
+    "createdAt": "2022-02-23T17:57:31.916Z",
+    "updatedAt": "2022-02-23T17:57:31.916Z"
+  },
+  {
+    "_id": "13",
+    "name": "Beans - Haricot",
+    "category":"bean",
+    "category1":"veg",
+    "off": "Get 20% off",
+    "image_url": "https://www.bigbasket.com/media/uploads/p/s/40089743_2-fresho-beans-haricot.jpg",
+    "mrp": 16.5,
+    "mrp2": 20.63,
+    "createdAt": "2022-02-23T17:57:59.446Z",
+    "updatedAt": "2022-02-23T17:57:59.446Z"
+  },
+  {
+    "_id": "14",
+    "name": "Orange - Nagpur, Regular",
+    "category":"orange",
+    "category1":"fruit",
+    "off": "Get 20% off",
+    "image_url": "https://www.bigbasket.com/media/uploads/p/s/10000266_27-fresho-orange-nagpur-regular.jpg",
+    "mrp": 89,
+    "mrp2": 111.25,
+    "createdAt": "2022-02-23T17:58:34.137Z",
+    "updatedAt": "2022-02-23T17:58:34.137Z"
+  },
+  {
+    "_id": "15",
+    "name": "Tender Coconut - Medium",
+    "category":"coconut",
+    "category1":"fruit",
+    "off": "Get 20% off",
+    "image_url": "https://www.bigbasket.com/media/uploads/p/s/40057966_2-fresho-tender-coconut-medium.jpg",
+    "mrp": 30,
+    "mrp2": 37.5,
+    "createdAt": "2022-02-23T17:59:00.117Z",
+    "updatedAt": "2022-02-23T17:59:00.117Z"
+  },
+  {
+    "_id": "16",
+    "name": "Potato - New Crop",
+    "category":"potato",
+    "category1":"veg",
+    "off": "Get 31% off",
+    "image_url": "https://www.bigbasket.com/media/uploads/p/s/40048457_7-fresho-potato-new-crop.jpg",
+    "mrp": 37,
+    "mrp2": 53.75,
+    "createdAt": "2022-02-23T18:04:03.290Z",
+    "updatedAt": "2022-02-23T18:04:03.290Z"
+  },
+  {
+    "_id": "17",
+    "name": "Onion - Organically Grown",
+    "category":"onion",
+    "category1":"veg",
+    "off": "Get 20% off",
+    "image_url": "https://www.bigbasket.com/media/uploads/p/s/40023472_5-fresho-onion-organically-grown.jpg",
+    "mrp": 45,
+    "mrp2": 55.25,
+    "createdAt": "2022-02-23T18:04:45.630Z",
+    "updatedAt": "2022-02-23T18:04:45.630Z"
+  },
+  {
+    "_id": "18",
+    "name": "Coconut - Medium",
+    "category":"coconut",
+    "category1":"fruit",
+    "off": "Get 29% off",
+    "image_url": "https://www.bigbasket.com/media/uploads/p/s/10000093_16-fresho-coconut-medium.jpg",
+    "mrp": 23.23,
+    "mrp2": 32.5,
+    "createdAt": "2022-02-23T18:05:06.011Z",
+    "updatedAt": "2022-02-23T18:05:06.011Z"
+  },
+  {
+    "_id": "19",
+    "name": "Tomato - Local, Organically Grown",
+    "category":"tomato",
+    "category1":"veg",
+    "off": "Get 20% off",
+    "image_url": "https://www.bigbasket.com/media/uploads/p/s/40022638_4-fresho-tomato-local-organically-grown.jpg",
+    "mrp": 19,
+    "mrp2": 23.75,
+    "createdAt": "2022-02-23T18:05:32.683Z",
+    "updatedAt": "2022-02-23T18:05:32.683Z"
+  },
+  {
+    "_id": "20",
+    "name": "Ridge Gourd",
+    "category":"ridge",
+    "category1":"veg",
+    "off": "Get 25% off",
+    "image_url": "https://www.bigbasket.com/media/uploads/p/s/10000175_15-fresho-ridge-gourd.jpg",
+    "mrp": 24.24,
+    "mrp2": 23.75,
+    "createdAt": "2022-02-23T18:12:14.512Z",
+    "updatedAt": "2022-02-23T18:12:14.512Z"
+  },
+  { "_id": "21",
+    "name": "Apple",
+  "category": "apple",
+  "category1": "fruit",
+  "off": "Get 23% off",
+  "image_url": "https://www.bigbasket.com/media/uploads/p/s/40134281_13-fresho-baby-apple-shimla.jpg",
+  "mrp": "125.2",
+  "mrp2": "162.70"
+  },
+  { "_id": "22",
+  "name": "Pumpkin",
+"category": "pumpkin",
+"category1": "veg",
+"off": "Get 23% off",
+"image_url": "https://www.bigbasket.com/media/uploads/p/s/10000163_17-fresho-pumpkin-green.jpg",
+"mrp": "20.60",
+"mrp2": "28.00"
+},
+{ "_id": "23",
+  "name": "Original Extra virgin Olive Oil",
+"category": "oil",
+"category1": "grocery",
+"off": "Get 51% off",
+"image_url": "https://www.bigbasket.com/media/uploads/p/s/40006250_7-borges-extra-virgin-olive-oil.jpg",
+"mrp": "683",
+"mrp2": "1400"
+},
+{ "_id": "24",
+  "name": "Kachi Ghani Mustared Oil",
+"category": " oil",
+"category1": "grocery",
+"off": "Get 25% off",
+"image_url": "https://www.bigbasket.com/media/uploads/p/s/40006865_3-dalda-kachi-ghani-mustard-oil.jpg",
+"mrp": "153",
+"mrp2": "204"
+},
+{ "_id": "25",
+  "name": "Masoor Dal",
+"category": "dal",
+"category1": "grocery",
+"off": "Get 25% off",
+"image_url": "https://www.bigbasket.com/media/uploads/p/s/40058664_10-bb-royal-masoor-dal.jpg",
+"mrp": "27",
+"mrp2": "37"
+},
+{ "_id": "26",
+  "name": "Masoor Dal",
+"category": "dal",
+"category1": "grocery",
+"off": "Get 25% off",
+"image_url": "https://www.bigbasket.com/media/uploads/p/s/40058664_10-bb-royal-masoor-dal.jpg",
+"mrp": "27",
+"mrp2": "37"
+}
+]
 }
