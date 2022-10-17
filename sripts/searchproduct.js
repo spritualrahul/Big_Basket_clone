@@ -1,34 +1,27 @@
-import {caro_1,caro_2,mcaro} from "../component/carousel.js" ;
 import navbar from "../component/navbar.js"
 import {footer} from "../component/footer.js"
-
+//import {sidebar} from "../component/sidebar.js"
+//document.getElementById("sidebar").innerHTML=sidebar();
 let foot=footer();
 document.getElementById("footer").innerHTML=foot;
 let nav=navbar();
 document.getElementById("navContainer").innerHTML=nav;
-document.getElementById("carousel-1").innerHTML = caro_1() ;
-document.getElementById("carousel-2").innerHTML = caro_2() ;
-
- async function getdata(page=1){
-    if(page<1){
-        page=4
-    }
-    if(page>4){
-        page=1
-    }
-    let url=`http://localhost:3000/products?_page=${page}&_limit=5`
+let url="http://localhost:3000/data"
+async function getdata(){
+  
+    let url=`http://localhost:3000/products/`
     let res=await fetch(url);
     let data=await res.json();
     display(data)
 }
-let url="http://localhost:3000/data"
-
 function display(data){
     // getting the parent div to append the products
 let prd=document.getElementById("products")
 prd.innerHTML="";
 // mapping the created products data
 data.forEach(function(elem,index){
+   let searchting=localStorage.getItem("searchpro")
+    if(elem.category===searchting||elem.category1===searchting){
 var mainDiv=document.createElement("div");
 mainDiv.setAttribute("id","mainDiv")
 
@@ -99,7 +92,7 @@ btn.addEventListener("click",function(){
      alert(`${elem.name} is added successfully`)
 
   })
-
+    
 
 var btndiv=document.createElement("div")
 btndiv.setAttribute("id","btndiv");
@@ -120,50 +113,7 @@ coldiv.append(mdiv,btndiv)
 idiv.append(offdiv,image)
 mainDiv.append(idiv,veg,fresh,name,coldiv);
 prd.append(mainDiv);
+    }
 });
 }
-getdata(3);
-//  document.getElementById("mcorosel").innerHTML=getdata(`http://localhost:3000/products?_page=${1}&_limit=5`)
-
-
-//  function Titu(page){
-//     let div=document.createElement("div")
-//     let btn=document.createElement("button")
-//     btn.innerText="<"
-//     btn.addEventListener("click",()=>{
-//         Titu(pre=>pre+1)
-//     })
-//     let data=getdata(`http://localhost:3000/products?_page=${page}&_limit=5`)
-//     let btn2=document.createElement("button")
-//     btn.innerText=">"
-//     div.append(btn,data.btn2)
-//     document.getElementById("mcorosel").append(div)
-
-
-//  }
-//  Titu(1)
-let page=1
-document.getElementById("addone").addEventListener("click",prev)
-function prev(){
-    page--;
-    if(page<1){
-        page=4
-    }
-    getdata(page)
-}
-document.getElementById("addtwo").addEventListener("click",next)
-function next(){
-    page++;
-    if(page>4){
-        page=1
-    }
-    getdata(page)
-}
-
-//console.log(searchproduct)
-let searchbutton=document.getElementById("btn")
-searchbutton.addEventListener('click',()=>{
-    let searchproduct=document.getElementById("searchbar").value;
-    localStorage.setItem("searchpro",searchproduct)
-    location.href="./searchproduct.html"
-})
+getdata()

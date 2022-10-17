@@ -65,6 +65,6 @@ function sidebar(){
     `)
 }
 
-export default sidebar;
+export { sidebar};
 
 // don't forget to link  <link rel="stylesheet" href="./style/sidebar.css">  //

@@ -1,5 +1,7 @@
 import navbar from "../component/navbar.js"
 import {footer} from "../component/footer.js"
+import {sidebar} from "../component/sidebar.js"
+document.getElementById("sidebar").innerHTML=sidebar();
 let foot=footer();
 document.getElementById("footer").innerHTML=foot;
 let nav=navbar();
@@ -91,3 +93,4 @@ coldiv.append(idiv,mdiv,btndiv)
 
 mainDiv.append(imagediv,coldiv);
 document.getElementById("product").append(mainDiv)
+

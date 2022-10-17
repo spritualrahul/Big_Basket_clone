@@ -6,7 +6,7 @@ function navbar(){
             <div class="menu"><p>SHOP BY CATEGORY<i class="fas fa-angle-down"></i></p>
             <div class="dropdown">
                <ul type = "none">
-                   <li><a href="./products.html">Fruits and vegetables</a></li>
+                   <li><a href="./product.html">Fruits and vegetables</a></li>
                    <li><a href="#">Food grains, Oil & Masala</a></li>
                    <li><a href="#">Bakery, Cakes & Dairy</a></li> 
                    <li><a href="#">Beverages</a></li> 
