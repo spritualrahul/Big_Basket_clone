@@ -168,7 +168,7 @@ body{
 <script>
 const signup=document.getElementById("startshopping");
 let mnumber=JSON.parse(localStorage.getItem("mobile"));
-
+localStorage.setItem("loginStatus", false)
 signup.addEventListener("click",()=>{
     gosignup();
 });
@@ -186,6 +186,7 @@ const  gosignup=()=>{
     localStorage.setItem("currentUser",JSON.stringify(arruser));
 
     let activeUser = JSON.parse(localStorage.getItem("userdetails")) || [];
+    localStorage.setItem("loginStatus", true)
     let flag = true;
     activeUser.map((Element)=>{
          if(Element.email==yemail){
