@@ -11,6 +11,7 @@
 }
 
 
+
 #spanCategory {
     border-bottom: 2px solid #84c225;
     color: rgba(34, 34, 34, 0.87);
@@ -18,6 +19,11 @@
     padding-bottom: 2px;
     font-size: 1.6rem;
     font-family: ProximaNova-Semibold;
+
+#fresh{
+    color: gray;
+    font-size: 5px;
+
 }
 
 a {
@@ -25,6 +31,7 @@ a {
 }
 
 a:link {
+
 
     text-decoration: none;
 }
@@ -35,5 +42,44 @@ a:hover {
 hr{
     width: 220px;
     margin-left: -7px;
+
+#types{
+    font-size: 5px;
+    line-height: 5px;
+    padding-left: 5px;    
+}
+#types>p:hover{
+    color: rgb(129,227,143);
+    cursor: pointer;
+}
+#hov:hover{
+    color: rgb(129,227,143);
+    cursor: pointer;
+}
+#color{
+    text-decoration: underline 3px rgb(132,194,37);
+}
+#brand>input>input:hover{
+    color: rgb(129,227,143);
+    cursor: pointer;
+}
+#slide{
+   
+}
+#fruits{
+
+font-size: 5px;
+color: gray;
+}
+#sortPrice{
+
+    height: 10px;
+    width: 230px;
+    border: 1px solid rgb(132,194,37);
+    margin-bottom: 20px;
+}
+#price,#origin,#seasonal,#pack,#brand{
+    font-size: 5px;
+    line-height: 22px;
 }
 
