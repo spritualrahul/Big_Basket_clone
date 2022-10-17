@@ -1,23 +1,47 @@
 
 
 
-/* Sidebar */
+#container {
+    display: grid;
+    grid-template-columns: 1fr 0.1fr 1.2fr 1.2fr;
+    grid-template-rows: (1, 500px);
+    width: 70%;
+    /* justify-content: center; */
+    /* margin: auto; */
+}
 
+
+
+#spanCategory {
+    border-bottom: 2px solid #84c225;
+    color: rgba(34, 34, 34, 0.87);
+    display: inline-block;
+    padding-bottom: 2px;
+    font-size: 1.6rem;
+    font-family: ProximaNova-Semibold;
 
 #fresh{
     color: gray;
     font-size: 5px;
+
 }
-#price2{
-    text-decoration: line-through;
-    margin-right: 5px;
+
+a {
     color: grey;
 }
 
-#inp{
-    height: 20px;
-    width: 220px;
+a:link {
+
+
+    text-decoration: none;
 }
+
+a:hover {
+    color: darkgreen;
+}
+hr{
+    width: 220px;
+    margin-left: -7px;
 
 #types{
     font-size: 5px;
@@ -59,4 +83,3 @@ color: gray;
     line-height: 22px;
 }
 
-/* end sidebar */
