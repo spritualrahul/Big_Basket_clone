@@ -94,3 +94,9 @@ coldiv.append(idiv,mdiv,btndiv)
 mainDiv.append(imagediv,coldiv);
 document.getElementById("product").append(mainDiv)
 
+let searchbutton=document.getElementById("btn")
+searchbutton.addEventListener('click',()=>{
+    let searchproduct=document.getElementById("searchbar").value;
+    localStorage.setItem("searchpro",searchproduct)
+    location.href="./searchproduct.html"
+})

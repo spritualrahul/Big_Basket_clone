@@ -483,6 +483,60 @@
     "mrp2": 23.75,
     "createdAt": "2022-02-23T18:12:14.512Z",
     "updatedAt": "2022-02-23T18:12:14.512Z"
-  }
+  },
+  { "_id": "21",
+    "name": "Apple",
+  "category": "apple",
+  "category1": "fruit",
+  "off": "Get 23% off",
+  "image_url": "https://www.bigbasket.com/media/uploads/p/s/40134281_13-fresho-baby-apple-shimla.jpg",
+  "mrp": "125.2",
+  "mrp2": "162.70"
+  },
+  { "_id": "22",
+  "name": "Pumpkin",
+"category": "pumpkin",
+"category1": "veg",
+"off": "Get 23% off",
+"image_url": "https://www.bigbasket.com/media/uploads/p/s/10000163_17-fresho-pumpkin-green.jpg",
+"mrp": "20.60",
+"mrp2": "28.00"
+},
+{ "_id": "23",
+  "name": "Original Extra virgin Olive Oil",
+"category": "oil",
+"category1": "grocery",
+"off": "Get 51% off",
+"image_url": "https://www.bigbasket.com/media/uploads/p/s/40006250_7-borges-extra-virgin-olive-oil.jpg",
+"mrp": "683",
+"mrp2": "1400"
+},
+{ "_id": "24",
+  "name": "Kachi Ghani Mustared Oil",
+"category": " oil",
+"category1": "grocery",
+"off": "Get 25% off",
+"image_url": "https://www.bigbasket.com/media/uploads/p/s/40006865_3-dalda-kachi-ghani-mustard-oil.jpg",
+"mrp": "153",
+"mrp2": "204"
+},
+{ "_id": "25",
+  "name": "Masoor Dal",
+"category": "dal",
+"category1": "grocery",
+"off": "Get 25% off",
+"image_url": "https://www.bigbasket.com/media/uploads/p/s/40058664_10-bb-royal-masoor-dal.jpg",
+"mrp": "27",
+"mrp2": "37"
+},
+{ "_id": "26",
+  "name": "Masoor Dal",
+"category": "dal",
+"category1": "grocery",
+"off": "Get 25% off",
+"image_url": "https://www.bigbasket.com/media/uploads/p/s/40058664_10-bb-royal-masoor-dal.jpg",
+"mrp": "27",
+"mrp2": "37"
+}
 ]
 }

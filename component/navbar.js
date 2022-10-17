@@ -6,7 +6,7 @@ function navbar(){
             <div class="menu"><p>SHOP BY CATEGORY<i class="fas fa-angle-down"></i></p>
             <div class="dropdown">
                <ul type = "none">
-                   <li><a href="./product.html">Fruits and vegetables</a></li>
+                   <li><a href="./pr.html">Fruits and vegetables</a></li>
                    <li><a href="#">Food grains, Oil & Masala</a></li>
                    <li><a href="#">Bakery, Cakes & Dairy</a></li> 
                    <li><a href="#">Beverages</a></li> 
@@ -29,12 +29,12 @@ function navbar(){
         </div>
         <div class="three">
             <div class="location"><i class="fas fa-map-marker-alt">831002,Delhi,India</i> <span> <i class="fas fa-angle-down"></i></span> <i class="far fa-user"></i><a href="./loginSignup/signupdetails.html" id ="loginbutton">Login/Sign Up</a></div>
-            <button class="btn1"><a href="./cart/Cart.html"><i class="fas fa-shopping-basket fa-3x"></i> <span><p id="mybasket">My Basket</p></span><p id="itemCountNav">0 items</p></a></button>
+            <button class="btn1"><a href="./cart/Cart.html"><i class="fas fa-shopping-basket fa-3x"></i> <span><p id="mybasket">My Basket</p></span><p id="itemCountNav">${cartdata.length} item</p></a></button>
         </div>
     </div>`
     )
 }
-
+let cartdata=JSON.parse(localStorage.getItem("bigbasket")) || []
 export default navbar;
 
 
