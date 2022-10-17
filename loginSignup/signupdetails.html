@@ -172,31 +172,32 @@ let mnumber=JSON.parse(localStorage.getItem("mobile"));
 signup.addEventListener("click",()=>{
     gosignup();
 });
-let signuparr=[]
+
 const  gosignup=()=>{
     let fname=document.getElementById("llfirstname").value;
 
     let lname=document.getElementById("lllastname").value;
     let yemail=document.getElementById("llemail").value;
 
-    console.log(mnumber.toString(),fname,lname,yemail);
-    let ys=new ysignup(mnumber.toString(),fname,lname,yemail);
-    signuparr.push(ys);
-    localStorage.setItem("userdetails",JSON.stringify(signuparr))
-
-    let activeUser = JSON.parse(localStorage.getItem("loginUser")) || {};
-
-    activeUser.loginStatus = true;
-    activeUser.userName = fname;
-
-    localStorage.setItem("loginUser", JSON.stringify(activeUser));
-
+    console.log(fname,lname,yemail);
+    let ys=new ysignup(fname,lname,yemail);
+    let activeUser = JSON.parse(localStorage.getItem("userdetails")) || [];
+    let flag = true;
+    activeUser.map((Element)=>{
+         if(Element.email==yemail){
+            flag=false;
+            alert("Account already Created");
+    }
+});
+ if(flag==true){
+    activeUser.push(ys);
+    localStorage.setItem("userdetails",JSON.stringify(activeUser));
     alert(`Account Created Successfully. Welcome ${fname} to Big Basket.`);
-
+    window.location.href = "verify.html";
+ }
     window.location.href = "verify.html";
 }
-function ysignup(mnumber,fname,lname,yemail){
-   this.mobile=mnumber;
+function ysignup(fname,lname,yemail){
     this.fname=fname;
     this.lname=lname;
     this.email=yemail;
