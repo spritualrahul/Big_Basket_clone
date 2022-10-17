@@ -42,6 +42,7 @@ body{
     font-weight: bold;
     font-size: 13px;
     margin-bottom: 9px;
+    color: white;
 }
 .menu > p > .fa-angle-down{
     margin-left: 18%;
@@ -63,13 +64,15 @@ body{
     width: 25%;
 }
 .search{
-    margin-top:35px;
+    margin-top:25px;
     
 }
 #searchbar{
     width: 90%;
-    height: 25px;
-    border-color: green;
+    height: 30px;
+    border-radius:0;
+    border-style:outset;
+   
 }
 #btn{
     border: none;
@@ -114,20 +117,24 @@ body{
 }
 .location{
     margin-bottom: 5px;
-    margin-left: 10px;
+    margin-left: 7px;
     width: 97%;
     display: flex;
 }
 .fa-map-marker-alt{
     margin: 0px 5px 0px 5px;
+    font-size:small;
+    margin-left: 30px;
 }
 .fa-user{
-    margin-left: 70px;
+    margin-left: 50px;
+    margin-right: 20px;
 }
 .location > a{
-    margin-left: 5px;
+    
     text-decoration: none;
     color: black;
+    font-size: small;
 }
 .location > a:hover{
     color:rgb(132,194,37);
@@ -146,17 +153,14 @@ body{
 } 
 .fa-shopping-basket{
     margin-top: 5px;
-    margin-right: 5px;
+    margin-right: 200px;
     color:rgb(218,37,29);
+    font-size:30px;
 }
 .btn1 a > span{
     font-size: 16px;
 }
-.btn1 a > p{
-    margin-left: 30%;
-    margin-top: -7px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+
 
 /* dropdown menu bar */
 .dropdown{
@@ -164,7 +168,7 @@ body{
     position: absolute;
     background-color: #f9f9f9;
     width:15%;
-   
+    z-index: 15;
   }
 
 .dropdown ul {
@@ -180,7 +184,7 @@ body{
   }
 ul > li > a{
     text-decoration: none;
-    color: gray;  
+    color: grey;  
      
 }
 ul > li {
@@ -192,5 +196,25 @@ ul > li {
 }
 ul > li :hover{
     text-decoration: none;
+    color: black;
+}
+#mybasket{
+    margin-top: -40px;
+    color: black;
+    font-size: smaller;
+    margin-left: 30px;
+}
+.btn1 a > p{
+    margin-left: 30%;
+    margin-top: -15px;
+    font-family:Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: black;
+    font-size:smaller;
+}
+#navContainer{
+    height: 100px;
+}
+#contact{
+    font-size:small;
     color: black;
 }
