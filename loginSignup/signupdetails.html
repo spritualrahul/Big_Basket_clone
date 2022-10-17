@@ -181,6 +181,10 @@ const  gosignup=()=>{
 
     console.log(fname,lname,yemail);
     let ys=new ysignup(fname,lname,yemail);
+    let arruser = [] 
+    arruser.push(ys)
+    localStorage.setItem("currentUser",JSON.stringify(arruser));
+
     let activeUser = JSON.parse(localStorage.getItem("userdetails")) || [];
     let flag = true;
     activeUser.map((Element)=>{
