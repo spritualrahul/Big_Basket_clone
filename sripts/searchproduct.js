@@ -77,9 +77,7 @@ var coldiv=document.createElement("div")
 coldiv.setAttribute("id","coldiv")
 
 //button 
-var qtybox=document.createElement("div")
-qtybox.setAttribute("id","qtybox")
-qtybox.innerText="1"
+
 
 var btn = document.createElement("button");
 btn.textContent="Add";
@@ -87,8 +85,8 @@ btn.setAttribute("id","cartbtn");
 var count=2;
 // adding click event to add items in the cart
 btn.addEventListener("click",function(){
-    qtybox.textContent=count++;
-    addtocart(elem.name,elem.mrp);
+
+    addtocart(elem.name,elem.mrp,elem.mrp2,elem.image_url,elem._id);
      alert(`${elem.name} is added successfully`)
 
   })
@@ -105,8 +103,8 @@ qty.textContent="Qty"
 var cartbtn=document.createElement("div")
 cartbtn.append(btn)
 
-qtydiv.append(qty,qtybox)
-btndiv.append(qtydiv,cartbtn)
+//qtydiv.append(qty,qtybox)
+btndiv.append(cartbtn)
 coldiv.append(mdiv,btndiv)
 
 
@@ -115,6 +113,31 @@ mainDiv.append(idiv,veg,fresh,name,coldiv);
 prd.append(mainDiv);
     }
 });
+}
+function addtocart(name,price,mrp2,img,id){
+   
+    // creating local storage
+let cartdata=JSON.parse(localStorage.getItem("bigbasket")) || [];
+// creating object to store cart data
+let obj={
+    id:id,
+    name:name,
+    price:price,
+   
+    mrp2:mrp2,
+    img:img,
+}
+cartdata.push(obj);
+// settig the total cart items
+//document.getElementById("itemCountNav").textContent=`${cartdata.length} item`;
+// setting local storage
+localStorage.setItem("bigbasket",JSON.stringify(cartdata)); 
+
+}
+function removefromcart(id){
+    let cartdata=JSON.parse(localStorage.getItem("bigbasket")) || [];
+    console.log(cartdata[0].id);
+   
 }
 getdata()
 let searchbutton=document.getElementById("btn")

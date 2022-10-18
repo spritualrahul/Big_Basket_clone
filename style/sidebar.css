@@ -10,7 +10,12 @@
     /* margin: auto; */
 }
 
-
+#sidepro{
+    border: none;
+    gap: 60px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
 
 #spanCategory {
     border-bottom: 2px solid #84c225;
@@ -19,6 +24,7 @@
     padding-bottom: 2px;
     font-size: 1.6rem;
     font-family: ProximaNova-Semibold;
+}
 
 #fresh{
     color: gray;
@@ -42,7 +48,7 @@ a:hover {
 hr{
     width: 220px;
     margin-left: -7px;
-
+}
 #types{
     font-size: 5px;
     line-height: 5px;

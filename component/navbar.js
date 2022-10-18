@@ -28,13 +28,21 @@ function navbar(){
             <div class="offers"><span class="ofr"><i class="fas fa-tag"></i> OFFERS</span> <span class="spcl"></span></div>
         </div>
         <div class="three">
-            <div class="location"><i class="fas fa-map-marker-alt">831002,Delhi,India</i> <span> <i class="fas fa-angle-down"></i></span> <i class="far fa-user"></i><a href="./loginSignup/signupdetails.html" id ="loginbutton">Login/Sign Up</a></div>
+            <div class="location"><i class="fas fa-map-marker-alt">831002,Delhi,India</i> <span> <i class="fas fa-angle-down"></i></span> <i class="far fa-user"></i><a href="./loginSignup/signupdetails.html" id ="loginbutton">${user1}</a></div>
             <button class="btn1"><a href="./cart/Cart.html"><i class="fas fa-shopping-basket fa-3x"></i> <span><p id="mybasket">My Basket</p></span><p id="itemCountNav">${cartdata.length} item</p></a></button>
         </div>
     </div>`
     )
 }
 let cartdata=JSON.parse(localStorage.getItem("bigbasket")) || []
+//let user=JSON.parse(localStorage.getItem("currentuser")) || []
+let user=JSON.parse(localStorage.getItem("currentUser")) || []
+let user1="";
+if(user.length==0){
+    user1="Login/Signup"
+}else{
+    user1=`${user[user.length-1].fname} ${user[user.length-1].lname}`;
+}
 export default navbar;
 
 

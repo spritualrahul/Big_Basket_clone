@@ -22,7 +22,7 @@ function sidebar(){
     <div style="
         height: 400px;
         width: 0.1px;
-        border: 0.001px solid black;
+        
         margin-top: 10px;
         margin-left: -20px;
       "></div>

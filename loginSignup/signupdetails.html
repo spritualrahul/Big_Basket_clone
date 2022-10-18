@@ -203,16 +203,16 @@ const  gosignup=()=>{
  }
     window.location.href = "verify.html";
     //console.log(mnumber.toString(),fname,lname,yemail);
-    let ys=new ysignup(mnumber,fname,lname,yemail);
-    signuparr.push(ys);
+    let y=new ysignup(mnumber,fname,lname,yemail);
+    signuparr.push(y);
     localStorage.setItem("userdetails",JSON.stringify(signuparr))
 
-    let activeUser = JSON.parse(localStorage.getItem("loginUser")) || {};
+    let activeUse = JSON.parse(localStorage.getItem("loginUser")) || {};
 
-    activeUser.loginStatus = true;
-    activeUser.userName = fname;
+    activeUse.loginStatus = true;
+    activeUse.userName = fname;
 
-    localStorage.setItem("loginUser", JSON.stringify(activeUser));
+    localStorage.setItem("loginUser", JSON.stringify(activeUse));
 
     alert(`Account Created Successfully. Welcome ${fname} to Big Basket.`);
 

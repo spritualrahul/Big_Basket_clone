@@ -100,6 +100,7 @@ btn.addEventListener("click",function(){
     btn.innerText="Remove"
     addtocart(elem.name,elem.mrp,elem.mrp2,elem.image_url,elem._id);
     alert(`${elem.name} is added successfully`)
+    //window.location.reload();
     }
    
 
@@ -126,7 +127,7 @@ prd.append(mainDiv);
 });
 }
 function addtocart(name,price,mrp2,img,id){
-    btn.innerText="Remove"
+   
     // creating local storage
 let cartdata=JSON.parse(localStorage.getItem("bigbasket")) || [];
 // creating object to store cart data
@@ -140,7 +141,7 @@ let obj={
 }
 cartdata.push(obj);
 // settig the total cart items
-document.getElementById("itemCountNav").textContent=`${cartdata.length} item`;
+//document.getElementById("itemCountNav").textContent=`${cartdata.length} item`;
 // setting local storage
 localStorage.setItem("bigbasket",JSON.stringify(cartdata)); 
 
@@ -152,7 +153,7 @@ function removefromcart(id){
 }
 getdata(3);
 //  document.getElementById("mcorosel").innerHTML=getdata(`http://localhost:3000/products?_page=${1}&_limit=5`)
-document.getElementById("itemCountNav").textContent=`${cartdata.length} item`;
+//document.getElementById("itemCountNav").textContent=`${cartdata.length} item`;
 
 //  function Titu(page){
 //     let div=document.createElement("div")
