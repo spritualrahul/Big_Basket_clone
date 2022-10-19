@@ -1,5 +1,6 @@
 .or_price{
     text-decoration: line-through;
+    color: red;
 }
 .price_div{
     display: grid;
@@ -11,6 +12,7 @@
 #thead{
     background-color: rgb(225, 225, 225);
 }
+
 .input{
     width: 20px;
 }
@@ -75,4 +77,66 @@
     background-color: white;
     width: 100%;
 }
+.red{
+    color: red;
+}
+.green{
+    color: green;
+}
+.red_b{
+    color: red;
+    border: 2px solid red;
+}
+.green_b{
+    color: green;
+    border: 2px solid green;
+}
+#u_saved{
+    border-radius: 30px;
+    width: 100px;
+    margin-left: 20px;
+}
+.hover:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+}
 
+#thead>tr>th{
+    color: blueviolet;
+    padding: 10px;
+}
+#checkout{
+    height: 30px;
+    border-radius: 20px;
+    background-color: rgb(105, 105, 234);
+    color: black;
+}
+#checkout:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+#continue_shop,#continue_shop1{
+    border-radius: 20px;
+    background-color: aqua;
+    height: 30px;
+    color: black;
+}
+#continue_shop:hover,#continue_shop1:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+#empty{
+    border-radius: 20px;
+    background-color: red;
+    color: black;
+    height: 30px;
+    
+}
+#empty:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+#Cart_empty{
+    display: grid;
+    justify-content: center;
+}

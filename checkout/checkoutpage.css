@@ -5,13 +5,15 @@
     gap: 20px;
     border: 2px solid rgb(220, 219, 219);
 }
-#main_box>div>button{
-    height: 30px;
+#add_address{
+    height: 50px;
     background-color: white;
     border: 2px solid rgb(235, 233, 233);
+    border-radius: 20px;
 }
-#main_box>div>button:hover{
+#add_address:hover{
     cursor: pointer;
+    transform: scale(1.1);
     border: 2px solid green;
 }
 #outer_box{
@@ -53,6 +55,7 @@
 }
 #d_add{
     display: flex;
+    height: 50px;
     justify-content: space-between;
 }
 #ch_add{
@@ -213,4 +216,16 @@ justify-content: center;
     display: grid;
     width: 800px;
     justify-content: flex-start;
+}
+#list>img,#list1>img,#list2>img,#list3>img{
+    width: 50px;
+    height: 50px;
+}
+#pay_3{
+    display: grid;
+    justify-content: center;
+}
+#place_order_card:hover,#place_order_cash:hover{
+    cursor: pointer;
+    transform: scale(1.1);
 }
