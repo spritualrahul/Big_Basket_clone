@@ -22,10 +22,17 @@
         <div id="button">
         <button><i class="fa-solid fa-tags"></i> VIEW AVAILABLE PROMOS</button>
         </div>
+        <div id="Cart_empty">
+            <h2>Sorry! Your Basket is Empty BUDDY</h2>
+            <img src="https://bakestudio.in/assets/images/cart/empty-cart.gif" alt="">
+            <button id="continue_shop">CONTINUE SHOPPING</button>
+        </div>
         <div id="cart_items">
-            <table>
+
+            <table id="table_items">
                 <thead id="thead">
                     <tr>
+                        <th>ITEM IMAGE</th>
                         <th>ITEM DESCRIPTION</th>
                         <th>UNIT PRICE</th>
                         <th>QUANTITY</th>
@@ -39,8 +46,8 @@
             </table>
             <div id="basket">
                 <div>
-                  <button>EMPTY BASKET</button>
-                  <button>CONTINUE SHOPPING</button>
+                  <button id="empty">EMPTY BASKET</button>
+                  <button id="continue_shop1">CONTINUE SHOPPING</button>
                 </div>
                 <div>
                     <div>
@@ -61,7 +68,7 @@
                                 </div><hr>
                             </div>
                         </div>
-                        <div><i class="fa-solid fa-piggy-bank"></i> You saved! Rs <span id="saved"></span></div>
+                        <div><img id="u_saved" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkyud2KcSfKpZSQpAGIiDLBgYbYWg5DH-nbA&usqp=CAU" alt=""> <p>You saved! </p> <span id="saved"></span></div>
                     </div>
                     <div><div><button id="checkout">CHECKOUT</button></div>
                 <div><p>Actual delivery charges computed at checkout time</p></div>
