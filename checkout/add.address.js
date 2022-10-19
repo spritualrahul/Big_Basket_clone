@@ -6,7 +6,7 @@ document.getElementById("cancel").addEventListener("click",back_to);
 function back_to(){
     location.href = "checkoutpage.html"
 }
-let arr = JSON.parse(localStorage.getItem("address"))||[];
+let arr6 = JSON.parse(localStorage.getItem("address"))||[];
 document.getElementById("add").addEventListener("click",add_to);
 function add_to(){
     let f_name = document.getElementById("f_name");
@@ -19,7 +19,7 @@ function add_to(){
     let city = document.getElementById("city");
     let state = document.getElementById("state");
     let pincode = document.getElementById("pincode");
-    arr.push({
+    arr6.push({
         name:f_name.value+l_name.value,
     phone:number.value,
     street:house_number.value+house_name.value+street.value,
@@ -29,6 +29,6 @@ function add_to(){
     country:'india',
     pincode:pincode.value,
     })
-    localStorage.setItem("address",JSON.stringify(arr));
+    localStorage.setItem("address",JSON.stringify(arr6));
     location.href = "checkoutpage.html"
 }
