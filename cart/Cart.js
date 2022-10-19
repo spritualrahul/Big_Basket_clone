@@ -134,6 +134,7 @@ document.getElementById("checkout").addEventListener("click",function(){
     location.href = "../checkout/checkoutpage.html";
 })
 document.getElementById("empty").addEventListener("click",function(){
+    alert("Are you sure, you want to Empty you Basket")
     arr.splice(0,arr.length);
     localStorage.setItem("bigbasket",JSON.stringify(arr));
     let items = document.getElementById("items_number");
