@@ -84,36 +84,40 @@ var coldiv=document.createElement("div")
 coldiv.setAttribute("id","coldiv")
 
 //button 
-var qtybox=document.createElement("div")
-qtybox.setAttribute("id","qtybox")
-qtybox.innerText="1"
+
 
 var btn = document.createElement("button");
-btn.textContent="Add";
+btn.textContent="Add to Cart";
 btn.setAttribute("id","cartbtn");
-var count=2;
+let count=0;
 // adding click event to add items in the cart
 btn.addEventListener("click",function(){
-    qtybox.textContent=count++;
-    addtocart(elem.name,elem.mrp);
-     alert(`${elem.name} is added successfully`)
+    count++;
+    if(count%2==0){
+        btn.textContent="Add to Cart";
+        removefromcart(elem._id);
+    }else{
+    btn.innerText="Remove"
+    addtocart(elem.name,elem.mrp,elem.mrp2,elem.image_url,elem._id);
+    alert(`${elem.name} is added successfully`)
+    //window.location.reload();
+    }
+   
 
   })
 
 
 var btndiv=document.createElement("div")
 btndiv.setAttribute("id","btndiv");
-var qtydiv=document.createElement("div")
-qtydiv.setAttribute("id","qtydiv")
-var qty=document.createElement("id","qty")
-qty.textContent="Qty"
+
+
 
 
 var cartbtn=document.createElement("div")
 cartbtn.append(btn)
 
-qtydiv.append(qty,qtybox)
-btndiv.append(qtydiv,cartbtn)
+
+btndiv.append(cartbtn)
 coldiv.append(mdiv,btndiv)
 
 
@@ -122,9 +126,34 @@ mainDiv.append(idiv,veg,fresh,name,coldiv);
 prd.append(mainDiv);
 });
 }
+function addtocart(name,price,mrp2,img,id){
+   
+    // creating local storage
+let cartdata=JSON.parse(localStorage.getItem("bigbasket")) || [];
+// creating object to store cart data
+let obj={
+    id:id,
+    name:name,
+    price:price,
+   
+    mrp2:mrp2,
+    img:img,
+}
+cartdata.push(obj);
+// settig the total cart items
+//document.getElementById("itemCountNav").textContent=`${cartdata.length} item`;
+// setting local storage
+localStorage.setItem("bigbasket",JSON.stringify(cartdata)); 
+
+}
+function removefromcart(id){
+    let cartdata=JSON.parse(localStorage.getItem("bigbasket")) || [];
+    console.log(cartdata[0].id);
+   
+}
 getdata(3);
 //  document.getElementById("mcorosel").innerHTML=getdata(`http://localhost:3000/products?_page=${1}&_limit=5`)
-
+//document.getElementById("itemCountNav").textContent=`${cartdata.length} item`;
 
 //  function Titu(page){
 //     let div=document.createElement("div")
@@ -159,3 +188,11 @@ function next(){
     }
     getdata(page)
 }
+
+//console.log(searchproduct)
+let searchbutton=document.getElementById("btn")
+searchbutton.addEventListener('click',()=>{
+    let searchproduct=document.getElementById("searchbar").value;
+    localStorage.setItem("searchpro",searchproduct)
+    location.href="./searchproduct.html"
+})

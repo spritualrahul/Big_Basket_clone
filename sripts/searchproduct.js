@@ -1,44 +1,41 @@
 import navbar from "../component/navbar.js"
-//import {caro_1,caro_2} from "../component/carousel.js" ;
-//document.getElementById("carousel-1").innerHTML = caro_1() ;
-//document.getElementById("carousel-2").innerHTML = caro_2() ;
-
+import {footer} from "../component/footer.js"
+//import {sidebar} from "../component/sidebar.js"
+//document.getElementById("sidebar").innerHTML=sidebar();
+let foot=footer();
+document.getElementById("footer").innerHTML=foot;
 let nav=navbar();
-
-import {footer} from "../component/footer.js" ;
-console.log(footer) ;
-document.getElementById("footer").innerHTML = footer() ;
-
 document.getElementById("navContainer").innerHTML=nav;
-
-var Data;
+let url="http://localhost:3000/data"
 async function getdata(){
-    try{
-        let req=await fetch("http://localhost:3000/data");
-        let data=await req.json();
-        console.log(data);
-        Data=data.products;
-    
-        display(data.products);
-    }
-    catch(err){
-        console.log(err);
-    }
+  
+    let url=`http://localhost:3000/products/`
+    let res=await fetch(url);
+    let data=await res.json();
+    display(data)
 }
-
 function display(data){
     // getting the parent div to append the products
 let prd=document.getElementById("products")
 prd.innerHTML="";
 // mapping the created products data
 data.forEach(function(elem,index){
+   let searchting=localStorage.getItem("searchpro")
+    if(elem.category===searchting||elem.category1===searchting){
 var mainDiv=document.createElement("div");
 mainDiv.setAttribute("id","mainDiv")
+
+
 var image=document.createElement("img");
 image.src=elem.image_url
 image.setAttribute("id","imgid")
+image.addEventListener("click",()=>{
+
+    localStorage.setItem("productId",JSON.stringify(elem))
+    window.location.href="./product.html"
+})
 var offdiv=document.createElement("div")
-offdiv.innerText=`Diwali Sale ${elem.off}`;
+offdiv.innerText=`Diwali Sale ${elem.off}*`;
 offdiv.setAttribute("id","offdiv")
 var idiv=document.createElement("div")
 
@@ -88,21 +85,25 @@ btn.setAttribute("id","cartbtn");
 var count=2;
 // adding click event to add items in the cart
 btn.addEventListener("click",function(){
-   
-    addtocart(elem.name,elem.mrp);
+
+    addtocart(elem.name,elem.mrp,elem.mrp2,elem.image_url,elem._id);
      alert(`${elem.name} is added successfully`)
 
   })
-
+    
 
 var btndiv=document.createElement("div")
 btndiv.setAttribute("id","btndiv");
+var qtydiv=document.createElement("div")
+qtydiv.setAttribute("id","qtydiv")
+var qty=document.createElement("id","qty")
+qty.textContent="Qty"
 
 
 var cartbtn=document.createElement("div")
 cartbtn.append(btn)
 
-
+//qtydiv.append(qty,qtybox)
 btndiv.append(cartbtn)
 coldiv.append(mdiv,btndiv)
 
@@ -110,15 +111,9 @@ coldiv.append(mdiv,btndiv)
 idiv.append(offdiv,image)
 mainDiv.append(idiv,veg,fresh,name,coldiv);
 prd.append(mainDiv);
+    }
 });
 }
-getdata();
-let searchbutton=document.getElementById("btn")
-searchbutton.addEventListener('click',()=>{
-    let searchproduct=document.getElementById("searchbar").value;
-    localStorage.setItem("searchpro",searchproduct)
-    location.href="./searchproduct.html"
-})
 function addtocart(name,price,mrp2,img,id){
    
     // creating local storage
@@ -144,3 +139,10 @@ function removefromcart(id){
     console.log(cartdata[0].id);
    
 }
+getdata()
+let searchbutton=document.getElementById("btn")
+searchbutton.addEventListener('click',()=>{
+    let searchproduct=document.getElementById("searchbar").value;
+    localStorage.setItem("searchpro",searchproduct)
+    location.href="./searchproduct.html"
+})

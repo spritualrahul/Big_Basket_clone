@@ -2,10 +2,18 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+#navContainer{
+    margin-bottom: 40px;
+}
+#products>div{
+    height: 430px;
+    gap: 0px;
+}
 #products{
     display: grid;
     grid-template-columns:repeat(5,1fr);
-    grid-gap: 10px;
+    grid-gap: 0px;
+    margin-bottom: 60px;
 }
 #mdiv{
     display: flex;
@@ -64,26 +72,16 @@
     margin-right: 5px;
     color: grey;
 }
-#qtydiv{
-    display: flex;
-    margin-left: 10px;
-}
+
 #btndiv{
-    display: flex;
-    margin-top: 10px;
+  
+    margin-top: 20px;
 }
-#qtybox{
-    width: 50px;
-    text-align: center;
-    background-color: white;
-    /* border: 1px solid red; */
-    margin-left: 5px;
-    padding-top: 2px;
-}
+
 #cartbtn{
     background-color: rgb(243, 167, 26);
-    width: 70px;
-    height: 22px;
+    width: 80%;
+    height: 80%;
     margin-left: 10px;
     border: 0.2px;
     cursor: pointer;

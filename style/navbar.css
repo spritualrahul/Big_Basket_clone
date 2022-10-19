@@ -168,7 +168,7 @@ body{
     position: absolute;
     background-color: #f9f9f9;
     width:15%;
-    z-index: 15;
+    z-index: 1;
   }
 
 .dropdown ul {
@@ -213,6 +213,9 @@ ul > li :hover{
 }
 #navContainer{
     height: 100px;
+    position: sticky;
+    top: 0;
+    background-color: #f9f9f9;
 }
 #contact{
     font-size:small;
