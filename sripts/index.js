@@ -100,7 +100,7 @@ btn.addEventListener("click",function(){
     btn.innerText="Remove"
     addtocart(elem.name,elem.mrp,elem.mrp2,elem.image_url,elem._id);
     alert(`${elem.name} is added successfully`)
-    //window.location.reload();
+    window.location.reload();
     }
    
 

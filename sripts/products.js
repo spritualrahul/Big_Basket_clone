@@ -57,39 +57,54 @@ mdiv.append(divOne,divTwo)
 
 var coldiv=document.createElement("div")
 coldiv.setAttribute("id","coldiv")
-var qtybox=document.createElement("div")
-qtybox.setAttribute("id","qtybox")
-qtybox.innerText="1"
+
 
 var btn = document.createElement("button");
-btn.textContent="Add";
+btn.textContent="Add To Cart";
 btn.setAttribute("id","cartbtn");
 var count=2;
 // adding click event to add items in the cart
 btn.addEventListener("click",function(){
-    qtybox.textContent=count++;
+   
     addtocart(product.name,product.mrp);
-     alert(`${elem.name} is added successfully`)
-
+     alert(`${product.name} is added successfully`)
+     window.location.reload();
   })
 
 
 var btndiv=document.createElement("div")
 btndiv.setAttribute("id","btndiv");
-var qtydiv=document.createElement("div")
-qtydiv.setAttribute("id","qtydiv")
-var qty=document.createElement("id","qty")
-qty.textContent="Qty"
+
 
 
 var cartbtn=document.createElement("div")
 cartbtn.append(btn)
 idiv.append(fresh,name)
-qtydiv.append(qty,qtybox)
-btndiv.append(qtydiv,cartbtn)
+
+btndiv.append(cartbtn)
 coldiv.append(idiv,mdiv,btndiv)
 
 
 
 mainDiv.append(imagediv,coldiv);
 document.getElementById("product").append(mainDiv)
+function addtocart(name,price,mrp2,img,id){
+   
+  // creating local storage
+let cartdata=JSON.parse(localStorage.getItem("bigbasket")) || [];
+// creating object to store cart data
+let obj={
+  id:id,
+  name:name,
+  price:price,
+ 
+  mrp2:mrp2,
+  img:img,
+}
+cartdata.push(obj);
+// settig the total cart items
+//document.getElementById("itemCountNav").textContent=`${cartdata.length} item`;
+// setting local storage
+localStorage.setItem("bigbasket",JSON.stringify(cartdata)); 
+
+}
