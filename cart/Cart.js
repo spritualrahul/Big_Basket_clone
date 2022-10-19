@@ -4,7 +4,10 @@ document.getElementById("footer").innerHTML = footer();
 document.getElementById("navContainer").innerHTML = navbar();
 let arr = JSON.parse(localStorage.getItem("bigbasket"));
 for(let i=0;i<arr.length;i++){
-    arr[i].quantity = 1;
+    if(arr[i].quantity===undefined){
+        arr[i].quantity = 1;
+    }
+    
 }
 localStorage.setItem("bigbasket",JSON.stringify(arr));
 let total_sav = 0;
