@@ -11,8 +11,7 @@ let arr1 = [{
     state:'karnataka',
     country:'india',
     pincode:560076
-},]
-localStorage.setItem("address",JSON.stringify(arr1));
+}]
 
 let arr = JSON.parse(localStorage.getItem("address"))||[];
 window.addEventListener("load",display);
