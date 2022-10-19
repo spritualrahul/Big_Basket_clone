@@ -11,16 +11,8 @@ let arr1 = [{
     state:'karnataka',
     country:'india',
     pincode:560076
-},{  name:'nagendra',
-phone:9880099565,
-street:'btm layout,banasenkari,banglore,560076',
-landmark:'near that tree',
-city:'banglore',
-state:'karnataka',
-country:'india',
-pincode:560076
-}]
-// localStorage.setItem("address",JSON.stringify(arr1));
+},]
+localStorage.setItem("address",JSON.stringify(arr1));
 
 let arr = JSON.parse(localStorage.getItem("address"))||[];
 window.addEventListener("load",display);
@@ -93,28 +85,34 @@ function add(){
 }
 document.getElementById("change_address").addEventListener("click",function(){
     document.getElementById("main_box").style.display = "block";
+    document.getElementById("d_add").setAttribute("id","d_add");
+
     document.getElementById("done").style.display = "none";
     document.getElementById("temp_shipment").style.display = "block"
     document.getElementById("shipment_outer").style.display = "none";
     document.getElementById("temp_shipment").innerText = "";
     document.getElementById("temp_shipment").innerHTML = `<p>Delivery options</p> <p id="info"></p><button id="sh_but"></button>`;
 })
-let arr2 = JSON.parse(localStorage.getItem("cart"));
+let arr2 = JSON.parse(localStorage.getItem("bigbasket"));
 display_list();
 function display_list(){
     arr2.forEach(function(e){
-        let ls = document.createElement("p");
-        ls.innerText = e.name;
+        let ls = document.createElement("img");
+        ls.src = e.img;
         document.getElementById("list").append(ls);
     })
 }
 document.getElementById("4_days").addEventListener("click",function(){
+    document.getElementById("list").innerText = ""
+    arr2.forEach(function(e){
+        let ls = document.createElement("img");
+        ls.src = e.img;
+        document.getElementById("list").append(ls);
+    })
     document.getElementById("four_days").style.display = "block";
     document.getElementById("two_days").style.display = "none";
     document.getElementById("twelve_hours").style.display = "none";
     document.getElementById("instant_maggy").style.display = "none";
-    document.getElementById("temp_shipment").innerText = "";
-    document.getElementById("temp_shipment").innerHTML = `<p>Delivery options</p> <p id="info"></p><button id="sh_but"></button>`;
     document.getElementById("continue").addEventListener("click",function(){
         document.getElementById("shipment_outer").style.display = "none";
         document.getElementById("temp_shipment").style.display = "block";
@@ -131,6 +129,12 @@ document.getElementById("4_days").addEventListener("click",function(){
     })
 })
 document.getElementById("2_days").addEventListener("click",function(){
+    document.getElementById("list1").innerText = ""
+    arr2.forEach(function(e){
+        let ls = document.createElement("img");
+        ls.src = e.img;
+        document.getElementById("list1").append(ls);
+    })
     document.getElementById("four_days").style.display = "none";
     document.getElementById("two_days").style.display = "block";
     document.getElementById("twelve_hours").style.display = "none";
@@ -151,6 +155,12 @@ document.getElementById("2_days").addEventListener("click",function(){
     })
 })
 document.getElementById("12_hours").addEventListener("click",function(){
+    document.getElementById("list2").innerText = ""
+    arr2.forEach(function(e){
+        let ls = document.createElement("img");
+        ls.src = e.img;
+        document.getElementById("list2").append(ls);
+    })
     document.getElementById("four_days").style.display = "none";
     document.getElementById("two_days").style.display = "none";
     document.getElementById("twelve_hours").style.display = "block";
@@ -171,6 +181,12 @@ document.getElementById("12_hours").addEventListener("click",function(){
     })
 })
 document.getElementById("instant").addEventListener("click",function(){
+    document.getElementById("list3").innerText = ""
+    arr2.forEach(function(e){
+        let ls = document.createElement("img");
+        ls.src = e.img;
+        document.getElementById("list3").append(ls);
+    })
     document.getElementById("four_days").style.display = "none";
     document.getElementById("two_days").style.display = "none";
     document.getElementById("twelve_hours").style.display = "none";
@@ -210,4 +226,22 @@ document.getElementById("upi").addEventListener("click",function(){
     document.getElementById("Card").style.display = "none";
 document.getElementById("cash_on").style.display = "none";
 document.getElementById("box_in_upi").style.display = "block";
+})
+document.getElementById("place_order_cash").addEventListener("click",function(){
+    alert(" Ooray.! Your Order is Placed via Case on Delivery")
+    arr2.splice(0,arr2.length);
+    location.href = "../index.html"
+    localStorage.setItem("bigbasket",JSON.stringify(arr2));
+})
+document.getElementById("verify").addEventListener("click",function(){
+    alert(" Ooray.! Your Order is Placed via Upi")
+    arr2.splice(0,arr2.length);
+    location.href = "../index.html"
+    localStorage.setItem("bigbasket",JSON.stringify(arr2));
+})
+document.getElementById("place_order_card").addEventListener("click",function(){
+    alert(" Ooray.! Your Order is Placed via Card")
+    location.href = "../index.html"
+    arr2.splice(0,arr2.length);
+    localStorage.setItem("bigbasket",JSON.stringify(arr2));
 })
