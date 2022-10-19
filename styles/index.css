@@ -4,6 +4,9 @@
 
 #navContainer{
     margin-bottom: 40px;
+    width: 90%;
+    margin: auto;
+    z-index: 1000;
 }
 #products>div{
     height: 430px;
@@ -14,6 +17,7 @@
     grid-template-columns:repeat(5,1fr);
     grid-gap: 0px;
     margin-bottom: 60px;
+    margin: auto;
 }
 #mdiv{
     display: flex;
