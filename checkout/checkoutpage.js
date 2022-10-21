@@ -80,7 +80,7 @@ document.getElementById("temp_shipment").style.display = "block"
 document.getElementById("shipment_outer").style.display = "none";
 document.getElementById("add_address").addEventListener("click",add);
 function add(){
-    location.href = "add_address.html"
+    location.href = "../checkout/add_address.html"
 }
 document.getElementById("change_address").addEventListener("click",function(){
     document.getElementById("main_box").style.display = "block";
