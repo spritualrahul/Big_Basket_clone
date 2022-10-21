@@ -2,7 +2,7 @@ function navbar(){
     return(
         `<div class="nav">
         <div class="one">
-            <div class="logo"><a href="./index.html"><img src="https://www.bbassets.com/static/staticContent/bb_logo.png" alt=""></a></div>
+            <div class="logo"><a href="../index.html"><img src="https://www.bbassets.com/static/staticContent/bb_logo.png" alt=""></a></div>
             <div class="menu"><p>SHOP BY CATEGORY<i class="fas fa-angle-down"></i></p>
             <div class="dropdown">
                <ul type = "none">
