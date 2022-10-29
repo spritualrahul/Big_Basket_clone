@@ -4,7 +4,7 @@ document.getElementById("footer").innerHTML = footer();
 document.getElementById("navContainer").innerHTML = navbar();
 document.getElementById("cancel").addEventListener("click",back_to);
 function back_to(){
-    location.href = "../checkout/checkoutpage.html"
+    location.href = "./checkout/checkoutpage.html"
 }
 let arr6 = JSON.parse(localStorage.getItem("address"))||[];
 document.getElementById("add").addEventListener("click",add_to);
@@ -30,5 +30,5 @@ function add_to(){
     pincode:pincode.value,
     })
     localStorage.setItem("address",JSON.stringify(arr6));
-    location.href = "../checkout/checkoutpage.html"
+    location.href = "./checkout/checkoutpage.html"
 }

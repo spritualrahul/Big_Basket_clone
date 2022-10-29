@@ -14,7 +14,7 @@ document.getElementById("navContainer").innerHTML=nav;
 var Data;
 async function getdata(){
     try{
-        let req=await fetch("http://localhost:3000/data");
+        let req=await fetch("https://localhost:3000/data");
         let data=await req.json();
         console.log(data);
         Data=data.products;

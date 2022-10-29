@@ -6,10 +6,10 @@ let foot=footer();
 document.getElementById("footer").innerHTML=foot;
 let nav=navbar();
 document.getElementById("navContainer").innerHTML=nav;
-let url="http://localhost:3000/data"
+let url="https://localhost:3000/data"
 async function getdata(){
   
-    let url=`http://localhost:3000/products/`
+    let url=`https://localhost:3000/products/`
     let res=await fetch(url);
     let data=await res.json();
     display(data)

@@ -16,12 +16,12 @@ document.getElementById("carousel-2").innerHTML = caro_2() ;
     if(page>4){
         page=1
     }
-    let url=`http://localhost:3000/products?_page=${page}&_limit=5`
+    let url=`https://localhost:3000/products?_page=${page}&_limit=5`
     let res=await fetch(url);
     let data=await res.json();
     display(data)
 }
-let url="http://localhost:3000/data"
+let url="https://localhost:3000/data"
 
 function display(data){
     // getting the parent div to append the products
