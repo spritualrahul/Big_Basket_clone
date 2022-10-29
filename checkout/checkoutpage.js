@@ -229,18 +229,18 @@ document.getElementById("box_in_upi").style.display = "block";
 document.getElementById("place_order_cash").addEventListener("click",function(){
     alert(" Ooray.! Your Order is Placed via Case on Delivery")
     arr2.splice(0,arr2.length);
-    location.href = "./index.html"
+    window.location.href = "../index.html"
     localStorage.setItem("bigbasket",JSON.stringify(arr2));
 })
 document.getElementById("verify").addEventListener("click",function(){
     alert(" Ooray.! Your Order is Placed via Upi")
     arr2.splice(0,arr2.length);
-    location.href = "./index.html"
+    window.location.href = "../index.html"
     localStorage.setItem("bigbasket",JSON.stringify(arr2));
 })
 document.getElementById("place_order_card").addEventListener("click",function(){
     alert(" Ooray.! Your Order is Placed via Card")
-    location.href = "./index.html"
+    window.location.href = "../index.html"
     arr2.splice(0,arr2.length);
     localStorage.setItem("bigbasket",JSON.stringify(arr2));
 })

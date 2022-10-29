@@ -131,7 +131,7 @@ function display(){
     total_amount1.innerText = total_sub+delivery_ch;
 }
 document.getElementById("checkout").addEventListener("click",function(){
-    location.href = "./checkout/checkoutpage.html";
+    window.location.href = "../checkout/checkoutpage.html";
 })
 document.getElementById("empty").addEventListener("click",function(){
     alert("Are you sure, you want to Empty you Basket")
@@ -142,8 +142,8 @@ document.getElementById("empty").addEventListener("click",function(){
     display()
 })
 document.getElementById("continue_shop").addEventListener("click",function(){
-    location.href = "./index.html"
+    window.location.href = "../index.html"
 })
 document.getElementById("continue_shop1").addEventListener("click",function(){
-    location.href = "./index.html"
+    window.location.href = "../index.html"
 })
